@@ -3,6 +3,8 @@
 from fastapi import FastAPI, Response
 from factory.video_factory import VideoStreamHandlerFactory
 from starlette.responses import StreamingResponse  # Импортируем StreamingResponse
+from app.detectors import MotionDetector
+#from observer.notifier import ConsoleNotifier
 import cv2
 
 app = FastAPI()
@@ -16,6 +18,12 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
     # Создание обработчика видеопотока через фабрику
     handler = VideoStreamHandlerFactory.create_handler(stream_type=stream_type, url=url)
     video = handler.get_stream()
+
+    # Инициализация детектора движения
+    detector = MotionDetector()
+    #notifier = ConsoleNotifier()
+    #detector.attach(notifier)
+
     def frame_generator():
         try:
             while True:
@@ -23,7 +31,7 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
                 if frame is None:
                     break
                 # Обработка кадра детектором движения с декораторами
-                #processed_frame = detector.process_frame(frame)
+                processed_frame = detector.process_frame(frame)
                 ret, buffer = cv2.imencode('.jpg', frame)
                 if not ret:
                     continue
