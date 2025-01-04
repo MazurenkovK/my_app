@@ -3,7 +3,7 @@
 from fastapi import FastAPI, Response
 from factory.video_factory import VideoStreamHandlerFactory
 from starlette.responses import StreamingResponse  # Импортируем StreamingResponse
-from app.detectors import MotionDetector
+from app.detectors_circle import CircleDetector
 #from observer.notifier import ConsoleNotifier
 import cv2
 
@@ -20,7 +20,7 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
     video = handler.get_stream()
 
     # Инициализация детектора движения
-    detector = MotionDetector()
+    detector = CircleDetector()
     #notifier = ConsoleNotifier()
     #detector.attach(notifier)
 
@@ -30,9 +30,14 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
                 frame = video.get_frame()
                 if frame is None:
                     break
-                # Обработка кадра детектором движения с декораторами
-                processed_frame = detector.process_frame(frame)
-                ret, buffer = cv2.imencode('.jpg', frame)
+
+                # Отображение кадра зеркально
+                flipped_frame = cv2.flip(frame, 1)  # 1 — зеркальное отображение по вертикали
+                
+                # Обработка кадра детектором кругов
+                processed_frame = detector.process_frame(flipped_frame)
+
+                ret, buffer = cv2.imencode('.jpg', processed_frame)
                 if not ret:
                     continue
                 frame_bytes = buffer.tobytes()
