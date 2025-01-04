@@ -33,7 +33,6 @@ class CircleDetector(Subject):
             minRadius=self.min_radius,
             maxRadius=self.max_radius
         )
-
         # Если круги найдены, обрабатываем их
         if circles is not None:
             for (x, y, radius) in np.uint16(np.around(circles[0, :])):
@@ -43,7 +42,6 @@ class CircleDetector(Subject):
             self.notify("Circle detected in frame")
         
         return frame
-
 
 '''
 Класс CircleDetector:

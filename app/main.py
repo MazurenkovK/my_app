@@ -4,7 +4,7 @@ from fastapi import FastAPI, Response
 from factory.video_factory import VideoStreamHandlerFactory
 from starlette.responses import StreamingResponse  # Импортируем StreamingResponse
 from app.detectors_circle import CircleDetector
-#from observer.notifier import ConsoleNotifier
+from observer.notifier import ConsoleNotifier
 import cv2
 
 app = FastAPI()
@@ -21,8 +21,8 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
 
     # Инициализация детектора движения
     detector = CircleDetector()
-    #notifier = ConsoleNotifier()
-    #detector.attach(notifier)
+    notifier = ConsoleNotifier()
+    detector.attach(notifier)
 
     def frame_generator():
         try:
@@ -51,6 +51,11 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
 
     return StreamingResponse(frame_generator(), media_type="multipart/x-mixed-replace; boundary=frame") 
         
-# VideoStream класс отвечает за подключение к видеопотоку.
-# Маршрут /video_feed возвращает поток изображений, закодированных в JPEG, которые можно отображать на frontend        
-# Теперь маршрут /video_feed принимает параметры stream_type и url, позволяя выбрать тип потока динамически.
+"""
+- VideoStream класс отвечает за подключение к видеопотоку.
+- Маршрут /video_feed возвращает поток изображений, закодированных в JPEG, которые можно отображать на frontend        
+- Теперь маршрут /video_feed принимает параметры stream_type и url, позволяя выбрать тип потока динамически.
+- Observer Pattern используется для уведомления наблюдателей о событиях, таких как обнаружение движения.
+- MotionDetector — субъект, который анализирует кадры и уведомляет наблюдателей при обнаружении движения.
+- ConsoleNotifier — наблюдатель, который выводит уведомления в консоль.
+"""
