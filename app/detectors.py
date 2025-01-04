@@ -1,13 +1,14 @@
-# app/detectors.py
-
+from repository.movement_repository import MovementRepository, Movement
+from datetime import datetime
+from observer.observer import Subject
 import cv2
-from observer.observer import Observer, Subject
 
 class MotionDetector(Subject):
-    def __init__(self, min_area=500):
+    def __init__(self, repository: MovementRepository, min_area=500):
         super().__init__()
         self.bg_subtractor = cv2.createBackgroundSubtractorMOG2()
         self.min_area = min_area
+        self.repository = repository
 
     def process_frame(self, frame):
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -20,5 +21,8 @@ class MotionDetector(Subject):
                 (x, y, w, h) = cv2.boundingRect(contour)
                 cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
         if motion_detected:
-            self.notify("Motion detected in frame")
+            message = "Motion detected in frame"
+            self.notify(message)
+            movement = Movement(timestamp=datetime.utcnow(), description=message)
+            self.repository.add_movement(movement)
         return frame

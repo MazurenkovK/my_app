@@ -1,10 +1,13 @@
+from repository.movement_repository import MovementRepository, Movement
+from datetime import datetime
+from observer.observer import Subject
 import cv2
 import numpy as np
-from observer.observer import Observer, Subject
 
 class CircleDetector(Subject):
     def __init__(
-            self, dp=0.5, min_dist=200, 
+            self, repository: MovementRepository, 
+            dp=0.5, min_dist=200, 
             param1=100, param2=150, 
             min_radius=70, max_radius=10000
         ):
@@ -18,6 +21,7 @@ class CircleDetector(Subject):
         self.param2 = param2  
         self.min_radius = min_radius  # Минимальный радиус кругов
         self.max_radius = max_radius  # Максимальный радиус кругов
+        self.repository = repository
 
     def process_frame(self, frame):
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -39,8 +43,10 @@ class CircleDetector(Subject):
                 # Рисуем окружность и центр
                 cv2.circle(frame, (x, y), radius, (0, 255, 0), 3)  
                 cv2.circle(frame, (x, y), 2, (0, 0, 255), 3)       
-            self.notify("Circle detected in frame")
-        
+            message = "Circle detected in framee"
+            self.notify(message)
+            movement = Movement(timestamp=datetime.utcnow(), description=message)
+            self.repository.add_movement(movement)        
         return frame
 
 '''
