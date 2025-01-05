@@ -26,3 +26,5 @@ class MotionDetector(Subject):
             movement = Movement(timestamp=datetime.utcnow(), description=message)
             self.repository.add_movement(movement)
         return frame
+    
+            #movement = Movement(timestamp=datetime.utcnow(), description=message)
