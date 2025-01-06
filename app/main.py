@@ -18,7 +18,8 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
     # Создание обработчика видеопотока через фабрику
     try:
         handler = VideoStreamHandlerFactory.create_handler(
-            stream_type=stream_type, url=url)
+            stream_type=stream_type, url=url
+        )
     except ValueError as ve:
         raise HTTPException(status_code=400, detail=str(ve))
     
@@ -31,8 +32,8 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
     detector = CircleDetector(repository=global_repository)
 
     # Применение декораторов
-    detector = LoggingDetectorDecorator(detector)
-    detector = FilterDetectorDecorator(detector, keyword="Motion")
+    #detector = LoggingDetectorDecorator(detector)
+    #detector = FilterDetectorDecorator(detector, keyword="Motion")
     
     # Инициализация наблюдателей
     console_notifier = ConsoleNotifier()
@@ -58,8 +59,7 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
                        + frame_bytes + b'\r\n')
         except Exception as e:
             print(f"Error during video processing: {e}")
-            raise HTTPException(
-                status_code=500, detail="Internal Server Error")
+            raise HTTPException(status_code=500, detail="Internal Server Error")
         finally:
             video.release()
 
@@ -71,6 +71,7 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
 @app.get("/movements")
 def get_movements():
     movements = global_repository.get_movements()
+    print(f"Total movements found: {len(movements)}")  # Отладочный вывод
     return [
         {"timestamp": m.timestamp.isoformat(), 
          "description": m.description} for m in movements
@@ -98,6 +99,15 @@ InMemoryMovementRepository — конкретная реализация, хра
 информации о движениях.
 - Добавлен маршрут /movements для получения списка всех 
 детектированных движений.
+- Паттерн Decorator позволяет динамически добавлять новые обязанности 
+объектам. В нашем случае, мы можем использовать его для добавления 
+дополнительных функций к детектору движения, например, логирование 
+или фильтрацию событ.
+- LoggingDetectorDecorator добавляет логирование при обработке 
+каждого кадра.
+- FilterDetectorDecorator добавляет фильтрацию событий по 
+ключевому слову.
+
 
 
 

@@ -15,7 +15,7 @@ class CircleDetector(Subject):
             dp=0.5, min_dist=200, 
             param1=100, param2=150, 
             min_radius=70, max_radius=10000,
-            min_delay=10.0
+            min_delay=2.0
         ):
         super().__init__()
         self.dp = dp  # Разрешение активации в пространстве параметров
@@ -47,19 +47,23 @@ class CircleDetector(Subject):
             maxRadius=self.max_radius
         )
         # Если круги найдены, обрабатываем их
-        if circles is not None:
+        if circles is not None and len(circles[0]) > 0:
+            print("Circles detected:", circles)
             # Проверяем время последнего обнаружения
             if (current_time - self.last_detection_time) >= self.min_delay:
                 for (x, y, radius) in np.uint16(np.around(circles[0, :])):
                     cv2.circle(frame, (x, y), radius, (0, 255, 0), 3)  
                     cv2.circle(frame, (x, y), 2, (0, 0, 255), 3)       
-                message = "Circle detected in frame"
+                message = "Circle detected in frame"                
                 self.notify(message)
                 movement = Movement(
                     timestamp=datetime.now(moscow_tz), 
-                    description=message
+                    description=message,
+                    frame=frame.copy()
                 )
+                print(f"Adding movement at {movement.timestamp}: {movement.description}")
                 self.repository.add_movement(movement)
+                self.repository.save_frame(movement)  # Вызов для сохранения кадра
                 # Обновляем время последнего обнаружения
                 self.last_detection_time = current_time          
         return frame
