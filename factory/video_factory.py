@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 from app.video import VideoStream
-import cv2
 
 # Абстрактный базовый класс для обработчиков видеопотока
 class VideoStreamHandler(ABC):
@@ -37,4 +36,8 @@ class VideoStreamHandlerFactory:
         else:
             raise ValueError("Unknown stream type")
         
-# Factory Pattern используется для создания различных обработчиков видеопотока без изменения клиентского кода.
+"""
+Factory Pattern используется для создания различных обработчиков 
+видеопотока без изменения клиентского кода.
+"""
+

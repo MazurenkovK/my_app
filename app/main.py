@@ -1,30 +1,42 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from factory.video_factory import VideoStreamHandlerFactory
-from starlette.responses import StreamingResponse  # Импортируем StreamingResponse
+from starlette.responses import StreamingResponse  
 from app.detectors_circle import CircleDetector
 from observer.notifier import ConsoleNotifier
 from repository.movement_repository import global_repository
+from utils.decorators import LoggingDetectorDecorator, FilterDetectorDecorator
 import cv2
 
 app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Motion Detection API Maz"}
+    return {"message": "Motion CircleDetection API Maz"}
 
 @app.get("/video_feed")
 def video_feed(stream_type: str = "Webcam", url: str = None):
     # Создание обработчика видеопотока через фабрику
-    handler = VideoStreamHandlerFactory.create_handler(stream_type=stream_type, url=url)
-    video = handler.get_stream()
+    try:
+        handler = VideoStreamHandlerFactory.create_handler(
+            stream_type=stream_type, url=url)
+    except ValueError as ve:
+        raise HTTPException(status_code=400, detail=str(ve))
+    
+    try:
+        video = handler.get_stream()
+    except ValueError as ve:
+        raise HTTPException(status_code=400, detail=str(ve))
 
-    # Инициализация репозитория движений
-    #repository = InMemoryMovementRepository()
-
-    # Инициализация детектора движения
+    # Инициализация детектора движения с глобальным репозиторием
     detector = CircleDetector(repository=global_repository)
-    notifier = ConsoleNotifier()
-    detector.attach(notifier)
+
+    # Применение декораторов
+    detector = LoggingDetectorDecorator(detector)
+    detector = FilterDetectorDecorator(detector, keyword="Motion")
+    
+    # Инициализация наблюдателей
+    console_notifier = ConsoleNotifier()
+    detector.attach(console_notifier)
 
     def frame_generator():
         try:
@@ -33,7 +45,8 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
                 if frame is None:
                     break
                 # Отображение кадра зеркально
-                flipped_frame = cv2.flip(frame, 1)  # 1 — зеркальное отображение по вертикали                
+                # 1 — зеркальное отображение по вертикали                
+                flipped_frame = cv2.flip(frame, 1)  
                 # Обработка кадра детектором кругов
                 processed_frame = detector.process_frame(flipped_frame)
                 ret, buffer = cv2.imencode('.jpg', processed_frame)
@@ -41,10 +54,12 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
                     continue
                 frame_bytes = buffer.tobytes()
                 yield (b'--frame\r\n'
-                       b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
+                       b'Content-Type: image/jpeg\r\n\r\n' 
+                       + frame_bytes + b'\r\n')
         except Exception as e:
             print(f"Error during video processing: {e}")
-            #raise HTTPException(status_code=500, detail="Internal Server Error")
+            raise HTTPException(
+                status_code=500, detail="Internal Server Error")
         finally:
             video.release()
 
@@ -55,9 +70,11 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
 
 @app.get("/movements")
 def get_movements():
-    #repository = InMemoryMovementRepository()
     movements = global_repository.get_movements()
-    return [{"timestamp": m.timestamp.isoformat(), "description": m.description} for m in movements] 
+    return [
+        {"timestamp": m.timestamp.isoformat(), 
+         "description": m.description} for m in movements
+    ] 
         
 """
 - VideoStream класс отвечает за подключение к видеопотоку.
