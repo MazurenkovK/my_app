@@ -6,15 +6,16 @@ from observer.notifier import ConsoleNotifier
 from repository.movement_repository import global_repository
 from utils.decorators import LoggingDetectorDecorator, FilterDetectorDecorator
 import cv2
+import asyncio
 
 app = FastAPI()
 
 @app.get("/")
-def read_root():
+async def read_root():
     return {"message": "Motion CircleDetection API Maz"}
 
 @app.get("/video_feed")
-def video_feed(stream_type: str = "Webcam", url: str = None):
+async def video_feed(stream_type: str = "Webcam", url: str = None):
     # Создание обработчика видеопотока через фабрику
     try:
         handler = VideoStreamHandlerFactory.create_handler(
@@ -32,24 +33,23 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
     detector = CircleDetector(repository=global_repository)
 
     # Применение декораторов
-    #detector = LoggingDetectorDecorator(detector)
-    #detector = FilterDetectorDecorator(detector, keyword="Motion")
+    # detector = LoggingDetectorDecorator(detector)
+    # detector = FilterDetectorDecorator(detector, keyword="Motion")
     
     # Инициализация наблюдателей
     console_notifier = ConsoleNotifier()
     detector.attach(console_notifier)
 
-    def frame_generator():
+    async def frame_generator():
         try:
             while True:
-                frame = video.get_frame()
+                frame = await asyncio.to_thread(video.get_frame)  # Используем asyncio.to_thread для асинхронного вызова
                 if frame is None:
                     break
                 # Отображение кадра зеркально
-                # 1 — зеркальное отображение по вертикали                
-                flipped_frame = cv2.flip(frame, 1)  
-                # Обработка кадра детектором кругов
-                processed_frame = detector.process_frame(flipped_frame)
+                flipped_frame = cv2.flip(frame, 1)
+                # Обработка кадра детектором
+                processed_frame = await asyncio.to_thread(detector.process_frame, flipped_frame)
                 ret, buffer = cv2.imencode('.jpg', processed_frame)
                 if not ret:
                     continue
@@ -61,7 +61,7 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
             print(f"Error during video processing: {e}")
             raise HTTPException(status_code=500, detail="Internal Server Error")
         finally:
-            video.release()
+            await asyncio.to_thread(video.release)
 
     return StreamingResponse(
         frame_generator(), 
@@ -69,13 +69,13 @@ def video_feed(stream_type: str = "Webcam", url: str = None):
     )
 
 @app.get("/movements")
-def get_movements():
-    movements = global_repository.get_movements()
+async def get_movements():
+    movements = await asyncio.to_thread(global_repository.get_movements)
     print(f"Total movements found: {len(movements)}")  # Отладочный вывод
     return [
         {"timestamp": m.timestamp.isoformat(), 
          "description": m.description} for m in movements
-    ] 
+    ]
         
 """
 - VideoStream класс отвечает за подключение к видеопотоку.

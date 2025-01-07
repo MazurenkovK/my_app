@@ -31,10 +31,20 @@ class InMemoryMovementRepository(MovementRepository):
     def save_frame(self, movement: Movement, save_dir="saved_frames"):
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)  # Создаем директорию, если не существует
-        frame_filename = os.path.join(
+        # Преобразуем кадр в оттенки серого
+        gray_frame = cv2.cvtColor(movement.frame, cv2.COLOR_BGR2GRAY)
+        # Сохраняем цветной кадр
+        color_frame_filename = os.path.join(
             save_dir, f"frame_{movement.timestamp.isoformat()}.jpg"
-            )
-        cv2.imwrite(frame_filename, movement.frame)  # Сохраняем кадр в файл
+        )
+        # Сохраняем цветной кадр в файл
+        cv2.imwrite(color_frame_filename, movement.frame)  
+        # Сохраняем кадр в оттенках серого
+        gray_frame_filename = os.path.join(
+            save_dir, f"frame_gray_{movement.timestamp.isoformat()}.jpg"
+        )
+        # Сохраняем серый кадр в файл
+        cv2.imwrite(gray_frame_filename, gray_frame)  
 
 # Создание глобального репозитория
 global_repository = InMemoryMovementRepository()

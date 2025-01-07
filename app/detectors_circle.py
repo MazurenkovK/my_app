@@ -9,13 +9,22 @@ import time
 # Получаем время в Московском часовом поясе
 moscow_tz = pytz.timezone('Europe/Moscow')
 
+# Функция/свертка для повышения четкости кадра
+def sharpen_image(image):
+       kernel = np.array([[0, -1, 0],
+                          [-1, 5, -1],
+                          [0, -1, 0]])
+       sharpened = cv2.filter2D(image, -1, kernel)
+       return sharpened
+
 class CircleDetector(Subject):
     def __init__(
             self, repository: MovementRepository, 
             dp=0.5, min_dist=200, 
             param1=100, param2=150, 
             min_radius=70, max_radius=10000,
-            min_delay=2.0
+            min_delay=0,
+            save_delay=2 
         ):
         super().__init__()
         self.dp = dp  # Разрешение активации в пространстве параметров
@@ -29,12 +38,14 @@ class CircleDetector(Subject):
         self.max_radius = max_radius  # Максимальный радиус кругов
         self.repository = repository
         self.last_detection_time = 0  # Время последнего обнаружения
-        self.min_delay = min_delay  
+        self.min_delay = min_delay
+        self.save_delay = save_delay    
+        self.last_save_time = 0  # Время последнего сохранения
+        self.is_saving = False  # Флаг для отслеживания процесса сохранения
 
     def process_frame(self, frame):
         current_time = time.time()  # Получаем текущее время
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        # Применение медианного фильтра для уменьшения шума
         gray = cv2.medianBlur(gray, 5) 
         circles = cv2.HoughCircles(
             gray,
@@ -46,26 +57,44 @@ class CircleDetector(Subject):
             minRadius=self.min_radius,
             maxRadius=self.max_radius
         )
-        # Если круги найдены, обрабатываем их
+
         if circles is not None and len(circles[0]) > 0:
             print("Circles detected:", circles)
-            # Проверяем время последнего обнаружения
             if (current_time - self.last_detection_time) >= self.min_delay:
                 for (x, y, radius) in np.uint16(np.around(circles[0, :])):
-                    cv2.circle(frame, (x, y), radius, (0, 255, 0), 3)  
+                    cv2.circle(frame, (x, y), radius, (0, 255, 0), 2)  
                     cv2.circle(frame, (x, y), 2, (0, 0, 255), 3)       
                 message = "Circle detected in frame"                
                 self.notify(message)
                 movement = Movement(
                     timestamp=datetime.now(moscow_tz), 
-                    description=message,
-                    frame=frame.copy()
+                    description=message
                 )
                 print(f"Adding movement at {movement.timestamp}: {movement.description}")
-                self.repository.add_movement(movement)
-                self.repository.save_frame(movement)  # Вызов для сохранения кадра
-                # Обновляем время последнего обнаружения
-                self.last_detection_time = current_time          
+
+                # Начинаем процесс сохранения, если он еще не идет
+                if not self.is_saving:
+                    self.is_saving = True
+                    self.last_save_time = current_time  
+                
+                # Проверяем, прошла ли задержка для сохранения
+                if (current_time - self.last_save_time) >= self.save_delay:
+                    # Обрезаем изображение
+                    crop_size = int(2.5 * radius)
+                    x_start = max(0, x - crop_size // 2)
+                    y_start = max(0, y - crop_size // 2)
+                    x_end = min(frame.shape[1], x + crop_size // 2)
+                    y_end = min(frame.shape[0], y + crop_size // 2)
+
+                    cropped_frame = frame[y_start:y_end, x_start:x_end]
+
+                    # Сохраняем данные о движении
+                    movement.frame = sharpen_image(cropped_frame.copy())
+                    self.repository.add_movement(movement)
+                    self.repository.save_frame(movement)
+                    self.is_saving = False  # Завершаем процесс сохранения
+                    self.last_detection_time = current_time  
+
         return frame
 
 '''
@@ -83,7 +112,9 @@ class CircleDetector(Subject):
    порог для обнаруженных кругов.
    - min_radius и max_radius: Минимальный и максимальный радиусы 
    кругов для обнаружения (min_radius=70 - детектирует круг 0,15м на расстоянии 1,3м).
-   - min_delay: минимальная задержка между детектированиями в секундах
+   - min_delay: минимальная задержка между детектированиями в секундах.
+   - save_delay: задержка перед сохранением кадра для стабилизации изображения
+
 
 2. Медианный фильтр:
    - Обработанный кадр сначала преобразуется в оттенки серого 
