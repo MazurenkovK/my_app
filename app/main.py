@@ -1,14 +1,33 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
 from factory.video_factory import VideoStreamHandlerFactory
 from starlette.responses import StreamingResponse  
 from app.detectors_circle import CircleDetector
 from observer.notifier import ConsoleNotifier
 from repository.movement_repository import global_repository
 from utils.decorators import LoggingDetectorDecorator, FilterDetectorDecorator
+from loguru import logger
 import cv2
 import asyncio
 
+
 app = FastAPI()
+
+# Настройка логирования
+logger.add("movement_repository.log", rotation="1 MB", level="INFO", backtrace=True, diagnose=True)
+logger.add("app_errors.log", rotation="1 MB", level="ERROR")  # Файл для ошибок
+
+# Обработчик ошибок для HTTPException
+@app.exception_handler(HTTPException)
+async def http_exception_handler(request: Request, exc: HTTPException):
+    logger.error(f"HTTP error occurred: {exc.detail}, Status code: {exc.status_code}, Path: {request.url.path}")
+    return await request.app.default_exception_handler(request, exc)
+
+# Обработчик ошибок для других исключений
+@app.exception_handler(Exception)
+async def generic_exception_handler(request: Request, exc: Exception):
+    logger.error(f"An unexpected error occurred: {exc}, Path: {request.url.path}")
+    return JSONResponse(status_code=500, content={"detail": "Internal Server Error"})
 
 @app.get("/")
 async def read_root():
@@ -85,7 +104,7 @@ async def get_movements():
 позволяя выбрать тип потока динамически.
 - Observer Pattern используется для уведомления наблюдателей 
 о событиях, таких как обнаружение движения.
-- MotionDetector — субъект, который анализирует кадры и уведомляет 
+- CircleDetector — субъект, который анализирует кадры и уведомляет 
 наблюдателей при обнаружении движения.
 - ConsoleNotifier — наблюдатель, который выводит уведомления в консоль.
 - Паттерн Repository используется для хранения и управления 

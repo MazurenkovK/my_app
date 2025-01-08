@@ -1,6 +1,7 @@
 from repository.movement_repository import MovementRepository, Movement
 from datetime import datetime
 from observer.observer import Subject
+from loguru import logger
 import cv2
 import numpy as np
 import pytz
@@ -58,8 +59,7 @@ class CircleDetector(Subject):
             maxRadius=self.max_radius
         )
 
-        if circles is not None and len(circles[0]) > 0:
-            print("Circles detected:", circles)
+        if circles is not None and len(circles[0]) > 0:                        
             if (current_time - self.last_detection_time) >= self.min_delay:
                 for (x, y, radius) in np.uint16(np.around(circles[0, :])):
                     cv2.circle(frame, (x, y), radius, (0, 255, 0), 2)  
@@ -69,8 +69,8 @@ class CircleDetector(Subject):
                 movement = Movement(
                     timestamp=datetime.now(moscow_tz), 
                     description=message
-                )
-                print(f"Adding movement at {movement.timestamp}: {movement.description}")
+                )   
+                logger.info(f"Circles detected: {circles}")             
 
                 # Начинаем процесс сохранения, если он еще не идет
                 if not self.is_saving:
@@ -87,6 +87,7 @@ class CircleDetector(Subject):
                     y_end = min(frame.shape[0], y + crop_size // 2)
 
                     cropped_frame = frame[y_start:y_end, x_start:x_end]
+                    logger.info(f"Object is focused. The frame size to save: {crop_size}x{crop_size}")
 
                     # Сохраняем данные о движении
                     movement.frame = sharpen_image(cropped_frame.copy())
