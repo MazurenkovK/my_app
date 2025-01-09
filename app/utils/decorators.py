@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from observer.observer import Subject
+from app.observer.observer import Subject
 
 class DetectorDecorator(Subject, ABC):
     def __init__(self, detector: Subject):

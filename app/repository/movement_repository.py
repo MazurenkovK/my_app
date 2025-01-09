@@ -1,8 +1,8 @@
-from abc import ABC, abstractmethod
 from datetime import datetime
 from loguru import logger
 import os
 import cv2
+from abc import ABC, abstractmethod
 
 class Movement:
     def __init__(self, timestamp: datetime, description: str, frame=None):
@@ -31,6 +31,9 @@ class InMemoryMovementRepository(MovementRepository):
         logger.info("Retrieving movements.")
         return self.movements
     
+    def clear_movements(self):
+        self.movements = []
+    
     def save_frame(self, movement: Movement, save_dir="saved_frames"):
         try:
             if not os.path.exists(save_dir):
@@ -53,9 +56,8 @@ class InMemoryMovementRepository(MovementRepository):
             )
             cv2.imwrite(gray_frame_filename, gray_frame)
             logger.info(f"Saved gray frame: {gray_frame_filename}")
-
         except Exception as e:
-            logger.error(f"Error saving frame: {e}") 
+            logger.error(f"Error saving frame: {e}")
 
 # Создание глобального репозитория
-global_repository = InMemoryMovementRepository()
+#global_repository = InMemoryMovementRepository()

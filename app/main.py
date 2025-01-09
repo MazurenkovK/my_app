@@ -1,15 +1,16 @@
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
-from factory.video_factory import VideoStreamHandlerFactory
+from app.factory.video_factory import VideoStreamHandlerFactory
 from starlette.responses import StreamingResponse  
-from app.detectors_circle import CircleDetector
-from observer.notifier import ConsoleNotifier
-from repository.movement_repository import global_repository
-from utils.decorators import LoggingDetectorDecorator, FilterDetectorDecorator
+from app.detectors.circle_detector import CircleDetector
+from app.observer.notifier import ConsoleNotifier
+from app.repository.movement_repository import InMemoryMovementRepository
+from app.utils.decorators import LoggingDetectorDecorator, FilterDetectorDecorator
 from loguru import logger
 import cv2
 import asyncio
 
+global_repository = InMemoryMovementRepository()
 
 app = FastAPI()
 
@@ -21,7 +22,7 @@ logger.add("app_errors.log", rotation="1 MB", level="ERROR")  # Файл для 
 @app.exception_handler(HTTPException)
 async def http_exception_handler(request: Request, exc: HTTPException):
     logger.error(f"HTTP error occurred: {exc.detail}, Status code: {exc.status_code}, Path: {request.url.path}")
-    return await request.app.default_exception_handler(request, exc)
+    return JSONResponse(status_code=exc.status_code, content={"detail": exc.detail})
 
 # Обработчик ошибок для других исключений
 @app.exception_handler(Exception)
@@ -60,11 +61,11 @@ async def video_feed(stream_type: str = "Webcam", url: str = None):
     detector.attach(console_notifier)
 
     async def frame_generator():
-        try:
-            while True:
-                frame = await asyncio.to_thread(video.get_frame)  # Используем asyncio.to_thread для асинхронного вызова
-                if frame is None:
-                    break
+        while True:
+            frame = video.get_frame()
+            if frame is None:
+                break
+            try:
                 # Отображение кадра зеркально
                 flipped_frame = cv2.flip(frame, 1)
                 # Обработка кадра детектором
@@ -76,16 +77,12 @@ async def video_feed(stream_type: str = "Webcam", url: str = None):
                 yield (b'--frame\r\n'
                        b'Content-Type: image/jpeg\r\n\r\n' 
                        + frame_bytes + b'\r\n')
-        except Exception as e:
-            print(f"Error during video processing: {e}")
-            raise HTTPException(status_code=500, detail="Internal Server Error")
-        finally:
-            await asyncio.to_thread(video.release)
-
-    return StreamingResponse(
-        frame_generator(), 
-        media_type="multipart/x-mixed-replace; boundary=frame"
-    )
+            except Exception as e:
+                logger.error(f"Error during video processing: {e}")
+                raise HTTPException(status_code=500, detail="Internal Server Error")
+            finally:
+                video.release
+    return StreamingResponse(frame_generator(), media_type="multipart/x-mixed-replace; boundary=frame")
 
 @app.get("/movements")
 async def get_movements():
@@ -95,6 +92,7 @@ async def get_movements():
         {"timestamp": m.timestamp.isoformat(), 
          "description": m.description} for m in movements
     ]
+        
         
 """
 - VideoStream класс отвечает за подключение к видеопотоку.

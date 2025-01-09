@@ -1,6 +1,6 @@
-from repository.movement_repository import MovementRepository, Movement
+from app.repository.movement_repository import MovementRepository, Movement
 from datetime import datetime
-from observer.observer import Subject
+from app.observer.observer import Subject
 from loguru import logger
 import cv2
 import numpy as np
