@@ -2,10 +2,12 @@ import pytest
 from fastapi.testclient import TestClient
 from app.main import app, global_repository
 from app.factory.video_factory import VideoStreamHandlerFactory
-from app.repository.movement_repository import Movement
+from app.repository.movement_repository import Movement, InMemoryMovementRepository
+from app.detectors.circle_detector import CircleDetector
 from unittest.mock import patch, MagicMock
 from datetime import datetime
 import cv2 
+import numpy as np
 
 client = TestClient(app)
 
@@ -47,3 +49,31 @@ def test_get_movements_with_data():
     assert response.status_code == 200
     assert len(response.json()) == 1
     assert response.json()[0]["description"] == "Test Movement"
+
+
+@pytest.fixture
+def circle_detector():
+    repository = InMemoryMovementRepository()
+    detector = CircleDetector(repository=repository)
+    return detector
+
+def test_circle_detector_initialization(circle_detector):
+    assert circle_detector.repository is not None
+
+def test_circle_detector_process_frame(circle_detector: CircleDetector):
+    # Создаем мок для кадра
+    frame = np.zeros((480, 640, 3), dtype=np.uint8)
+    gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    cv2.circle(gray_frame, (320, 240), 50, (255, 255, 255), 2)
+    
+    with patch('cv2.HoughCircles', return_value=np.array([[[320, 240, 50]]])):
+        processed_frame = circle_detector.process_frame(frame)
+        assert processed_frame is not None
+
+def test_circle_detector_no_circles_detected(circle_detector):
+    frame = np.zeros((480, 640, 3), dtype=np.uint8)
+    
+    with patch('cv2.HoughCircles', return_value=None):
+        processed_frame = circle_detector.process_frame(frame)
+        assert processed_frame is not None
+        assert not circle_detector.is_saving

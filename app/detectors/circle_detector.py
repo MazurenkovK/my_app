@@ -6,6 +6,9 @@ import cv2
 import numpy as np
 import pytz
 import time
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 # Получаем время в Московском часовом поясе
 moscow_tz = pytz.timezone('Europe/Moscow')
@@ -45,6 +48,7 @@ class CircleDetector(Subject):
         self.is_saving = False  # Флаг для отслеживания процесса сохранения
 
     def process_frame(self, frame):
+        #logging.debug("Processing frame")
         current_time = time.time()  # Получаем текущее время
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         gray = cv2.medianBlur(gray, 5) 
@@ -60,6 +64,7 @@ class CircleDetector(Subject):
         )
 
         if circles is not None and len(circles[0]) > 0:                        
+            #logging.debug(f"Circles detected: {circles}")
             if (current_time - self.last_detection_time) >= self.min_delay:
                 for (x, y, radius) in np.uint16(np.around(circles[0, :])):
                     cv2.circle(frame, (x, y), radius, (0, 255, 0), 2)  
@@ -94,8 +99,8 @@ class CircleDetector(Subject):
                     self.repository.add_movement(movement)
                     self.repository.save_frame(movement)
                     self.is_saving = False  # Завершаем процесс сохранения
-                    self.last_detection_time = current_time  
-
+                    self.last_detection_time = current_time
+            
         return frame
 
 '''

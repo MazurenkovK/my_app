@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
+from starlette.responses import StreamingResponse
 from app.factory.video_factory import VideoStreamHandlerFactory
-from starlette.responses import StreamingResponse  
 from app.detectors.circle_detector import CircleDetector
 from app.observer.notifier import ConsoleNotifier
 from app.repository.movement_repository import InMemoryMovementRepository
@@ -82,12 +82,13 @@ async def video_feed(stream_type: str = "Webcam", url: str = None):
                 raise HTTPException(status_code=500, detail="Internal Server Error")
             finally:
                 video.release
-    return StreamingResponse(frame_generator(), media_type="multipart/x-mixed-replace; boundary=frame")
+    return StreamingResponse(
+        frame_generator(), media_type="multipart/x-mixed-replace; boundary=frame")
 
 @app.get("/movements")
 async def get_movements():
     movements = await asyncio.to_thread(global_repository.get_movements)
-    print(f"Total movements found: {len(movements)}")  # Отладочный вывод
+    logger.info(f"Total movements found: {len(movements)}")  # Отладочный вывод
     return [
         {"timestamp": m.timestamp.isoformat(), 
          "description": m.description} for m in movements
