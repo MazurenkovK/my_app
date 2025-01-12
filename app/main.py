@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, HTMLResponse, StreamingResponse
 from starlette.responses import StreamingResponse
 from app.factory.video_factory import VideoStreamHandlerFactory
 from app.detectors.circle_detector import CircleDetector
@@ -7,12 +7,13 @@ from app.observer.notifier import ConsoleNotifier
 from app.repository.movement_repository import InMemoryMovementRepository
 from app.utils.decorators import LoggingDetectorDecorator, FilterDetectorDecorator
 from loguru import logger
+from fastapi.templating import Jinja2Templates
 import cv2
 import asyncio
 
-global_repository = InMemoryMovementRepository()
-
 app = FastAPI()
+global_repository = InMemoryMovementRepository()
+templates = Jinja2Templates(directory="app/templates")
 
 # Настройка логирования
 logger.add("movement_repository.log", rotation="1 MB", level="INFO", backtrace=True, diagnose=True)
@@ -30,9 +31,9 @@ async def generic_exception_handler(request: Request, exc: Exception):
     logger.error(f"An unexpected error occurred: {exc}, Path: {request.url.path}")
     return JSONResponse(status_code=500, content={"detail": "Internal Server Error"})
 
-@app.get("/")
-async def read_root():
-    return {"message": "Motion CircleDetection API Maz"}
+@app.get("/", response_class=HTMLResponse)
+def home(request: Request):
+    return templates.TemplateResponse("base.html", {"request": request})
 
 @app.get("/video_feed")
 async def video_feed(stream_type: str = "Webcam", url: str = None):
@@ -85,7 +86,7 @@ async def video_feed(stream_type: str = "Webcam", url: str = None):
     return StreamingResponse(
         frame_generator(), media_type="multipart/x-mixed-replace; boundary=frame")
 
-@app.get("/movements")
+@app.get("/notifications")
 async def get_movements():
     movements = await asyncio.to_thread(global_repository.get_movements)
     logger.info(f"Total movements found: {len(movements)}")  # Отладочный вывод

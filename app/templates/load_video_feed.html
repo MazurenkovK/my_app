@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Видеопоток
+{% endblock %}
+
+{% block content %}
+    <h1>Видеопоток</h1>
+    <div>
+        <h2>Просмотр видеопотока</h2>
+        <img src="{{ url_for('video_feed', stream_type=stream_type) }}" alt="Видеопоток" />
+    </div>
+{% endblock %}
