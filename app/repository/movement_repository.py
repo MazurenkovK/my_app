@@ -4,6 +4,8 @@ from loguru import logger
 import os
 import cv2
 from abc import ABC, abstractmethod
+from app.sqlalc import get_db, Image  # Импортируем необходимые функции и классы
+from sqlalchemy.orm import Session
 
 class Movement:
     def __init__(self, timestamp: datetime, description: str, frame=None):
@@ -59,6 +61,18 @@ class InMemoryMovementRepository(MovementRepository):
             logger.info(f"Saved gray frame: {gray_frame_filename}")
         except Exception as e:
             logger.error(f"Error saving frame: {e}")
+    
+    def save_image_to_db(self, movement: Movement):
+        try:
+            db: Session = next(get_db())
+            db_image = Image(timestamp=movement.timestamp, description=movement.description, image_data=movement.frame.tobytes())
+            db.add(db_image)
+            db.commit()
+            db.refresh(db_image)
+            logger.info(f"Image saved to database with ID: {db_image.id}")
+        except Exception as e:
+            logger.error(f"Error saving to the db: {e}")
+
 
 # Создание глобального репозитория
 #global_repository = InMemoryMovementRepository()

@@ -98,6 +98,7 @@ class CircleDetector(Subject):
                     movement.frame = sharpen_image(cropped_frame.copy())
                     self.repository.add_movement(movement)
                     self.repository.save_frame(movement)
+                    self.repository.save_image_to_db(movement)
                     self.is_saving = False  # Завершаем процесс сохранения
                     self.last_detection_time = current_time
             
