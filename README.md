@@ -20,10 +20,13 @@ my_app/
 │   ├── observer/
 │   ├── utils/
 │   └── video.py
+├── install/
 ├── static/               # Статические файлы (диаграммы)
+├── test/
+├── .gitignore
+├── result.mov
 ├── readme.md 
-├── requirements.txt
-└── test_main.py
+└── requirements.txt
 ```
 
 **Этап 1**
