@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse, HTMLResponse, StreamingResponse
 from starlette.responses import StreamingResponse
 from app.factory.video_factory import VideoStreamHandlerFactory
-from app.detectors.circle_detector import CircleDetector
+from app.detectors.circle_detector import CircleDetector, CircleDetectorConfig
 from app.observer.notifier import ConsoleNotifier
 from app.repository.movement_repository import InMemoryMovementRepository
 from app.utils.decorators import LoggingDetectorDecorator, FilterDetectorDecorator
@@ -13,6 +13,7 @@ import asyncio
 
 app = FastAPI()
 global_repository = InMemoryMovementRepository()
+circle_config = CircleDetectorConfig()
 templates = Jinja2Templates(directory="app/templates")
 
 # Настройка логирования
@@ -51,7 +52,7 @@ async def video_feed(stream_type: str = "Webcam", url: str = None):
         raise HTTPException(status_code=400, detail=str(ve))
 
     # Инициализация детектора движения с глобальным репозиторием
-    detector = CircleDetector(repository=global_repository)
+    detector = CircleDetector(repository=global_repository, config=circle_config)
 
     # Применение декораторов
     # detector = LoggingDetectorDecorator(detector)

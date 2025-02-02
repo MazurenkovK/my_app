@@ -4,7 +4,7 @@ from loguru import logger
 import os
 import cv2
 from abc import ABC, abstractmethod
-from app.sqlalc import get_db, Image  # Импортируем необходимые функции и классы
+from app.models import get_db, Image  # Импортируем необходимые функции и классы
 from sqlalchemy.orm import Session
 
 class Movement:
