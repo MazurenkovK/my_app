@@ -2,6 +2,5 @@
 *.log
 .DS_Store
 .vscode/
-model/
-view/
+my_file/
 saved_frames/

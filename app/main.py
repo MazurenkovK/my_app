@@ -8,6 +8,7 @@ from app.repository.movement_repository import InMemoryMovementRepository
 from app.utils.decorators import LoggingDetectorDecorator, FilterDetectorDecorator
 from loguru import logger
 from fastapi.templating import Jinja2Templates
+from collections import deque
 import cv2
 import asyncio
 
@@ -17,8 +18,22 @@ circle_config = CircleDetectorConfig()
 templates = Jinja2Templates(directory="app/templates")
 
 # Настройка логирования
+
+# Очередь для хранения последних логов
+log_queue = deque(maxlen=100)
+log_stream_active = False
+
+# Кастомный обработчик для loguru
+def log_handler(message):
+    global log_queue
+    log_record = message.record
+    formatted = f"[{log_record['time']}] {log_record['message']}"
+    log_queue.append(formatted)
+
 logger.add("movement_repository.log", rotation="1 MB", level="INFO", backtrace=True, diagnose=True)
 logger.add("app_errors.log", rotation="1 MB", level="ERROR")  # Файл для ошибок
+# Добавляем обработчик
+logger.add(log_handler, level="INFO")
 
 # Обработчик ошибок для HTTPException
 @app.exception_handler(HTTPException)
@@ -114,7 +129,23 @@ async def notifications_page(request: Request):
             "notifications": notifications
         }
     )       
-        
+# Эндпоинт для потоковой передачи логов
+@app.get("/log_stream")
+async def log_stream(request: Request):
+    async def event_generator():
+        last_sent = 0
+        while True:
+            if len(log_queue) > last_sent:
+                new_logs = list(log_queue)[last_sent:]
+                for log in new_logs:
+                    yield f"data: {log}\n\n"
+                    last_sent += 1
+            await asyncio.sleep(0.5)
+    
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream"
+    )        
 """
 - VideoStream класс отвечает за подключение к видеопотоку.
 - Маршрут /video_feed возвращает поток изображений, закодированных
