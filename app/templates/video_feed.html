@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Сканнер</h2>
+    <div>
+        <img src="{{ url_for('video_feed') }}" alt="Video Feed" style="width: 100%; max-width: 640px;">
+    </div>
+{% endblock %}

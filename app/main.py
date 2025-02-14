@@ -36,6 +36,11 @@ async def generic_exception_handler(request: Request, exc: Exception):
 def home(request: Request):
     return templates.TemplateResponse("base.html", {"request": request})
 
+# Маршрут для рендеринга базового шаблона с навигацией и HTML-страницу с /video_feed
+@app.get("/scanner", response_class=HTMLResponse)
+async def scanner_page(request: Request):
+    return templates.TemplateResponse("scanner.html", {"request": request})
+
 @app.get("/video_feed")
 async def video_feed(stream_type: str = "Webcam", url: str = None):
     # Создание обработчика видеопотока через фабрику
@@ -87,15 +92,28 @@ async def video_feed(stream_type: str = "Webcam", url: str = None):
     return StreamingResponse(
         frame_generator(), media_type="multipart/x-mixed-replace; boundary=frame")
 
-@app.get("/notifications")
-async def get_movements():
+
+@app.get("/notifications_page", response_class=HTMLResponse)
+async def notifications_page(request: Request):
+    # Получаем данные из репозитория
     movements = await asyncio.to_thread(global_repository.get_movements)
     logger.info(f"Total movements found: {len(movements)}")  # Отладочный вывод
-    return [
-        {"timestamp": m.timestamp.isoformat(), 
-         "description": m.description} for m in movements
+    # Форматируем для шаблона
+    notifications = [
+        {
+            "timestamp": m.timestamp.strftime("%Y-%m-%d %H:%M:%S"),
+            "description": m.description
+        } 
+        for m in movements
     ]
-        
+    
+    return templates.TemplateResponse(
+        "notifications.html", 
+        {
+            "request": request,
+            "notifications": notifications
+        }
+    )       
         
 """
 - VideoStream класс отвечает за подключение к видеопотоку.
