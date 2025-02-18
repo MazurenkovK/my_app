@@ -18,10 +18,12 @@ circle_config = CircleDetectorConfig()
 templates = Jinja2Templates(directory="app/templates")
 
 # Настройка логирования
+logger.add("movement_repository.log", rotation="1 MB", level="INFO", backtrace=True, diagnose=True)
+logger.add("app_errors.log", rotation="1 MB", level="ERROR")  # Файл для ошибок
 
 # Очередь для хранения последних логов
-log_queue = deque(maxlen=100)
-log_stream_active = False
+log_queue = deque(maxlen=100) # Двухсторонняя очередь с хранением 100 логов
+log_stream_active = False # Флаг для управления потоковой передачей логов
 
 # Кастомный обработчик для loguru
 def log_handler(message):
@@ -30,8 +32,6 @@ def log_handler(message):
     formatted = f"[{log_record['time']}] {log_record['message']}"
     log_queue.append(formatted)
 
-logger.add("movement_repository.log", rotation="1 MB", level="INFO", backtrace=True, diagnose=True)
-logger.add("app_errors.log", rotation="1 MB", level="ERROR")  # Файл для ошибок
 # Добавляем обработчик
 logger.add(log_handler, level="INFO")
 
@@ -177,7 +177,11 @@ InMemoryMovementRepository — конкретная реализация, хра
 - FilterDetectorDecorator добавляет фильтрацию событий по 
 ключевому слову.
 
-
+Реализован вывод логов в реальном времени на странице сканера. 
+Для этого добавлен Server-Sent Events (SSE).
+Loguru передаёт сообщение в log_handler
+Обработчик форматирует сообщение и добавляет его в log_queue.
+Эндпоинт /log_stream читает из log_queue и отправляет клиенту.
 
 
 
