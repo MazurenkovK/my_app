@@ -1,7 +1,6 @@
-*.txt
 *.log
 .DS_Store
 .vscode/
 my_file/
 saved_frames/
-12
+images.db
