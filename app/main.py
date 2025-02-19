@@ -22,15 +22,18 @@ logger.add("movement_repository.log", rotation="1 MB", level="INFO", backtrace=T
 logger.add("app_errors.log", rotation="1 MB", level="ERROR")  # Файл для ошибок
 
 # Очередь для хранения последних логов
-log_queue = deque(maxlen=100) # Двухсторонняя очередь с хранением 100 логов
-log_stream_active = False # Флаг для управления потоковой передачей логов
+log_queue = asyncio.Queue(maxsize=500)  # Максимум 500 сообщений
+log_stream_active = True
 
 # Кастомный обработчик для loguru
 def log_handler(message):
-    global log_queue
-    log_record = message.record
-    formatted = f"[{log_record['time']}] {log_record['message']}"
-    log_queue.append(formatted)
+    try:
+        log_record = message.record
+        formatted = f"[{log_record['time']}] {log_record['message']}"
+        # Неблокирующее добавление в очередь
+        log_queue.put_nowait(formatted)
+    except asyncio.QueueFull:
+        logger.warning("Лог-очередь переполнена, сообщение отброшено")
 
 # Добавляем обработчик
 logger.add(log_handler, level="INFO")
@@ -133,19 +136,23 @@ async def notifications_page(request: Request):
 @app.get("/log_stream")
 async def log_stream(request: Request):
     async def event_generator():
-        last_sent = 0
+        # Отправляем всю историю при подключении
+        history = []
+        while not log_queue.empty():
+            history.append(await log_queue.get())
+        
+        for log in history:
+            yield f"data: {log}\n\n"
+        
+        # Отправляем новые сообщения
         while True:
-            if len(log_queue) > last_sent:
-                new_logs = list(log_queue)[last_sent:]
-                for log in new_logs:
-                    yield f"data: {log}\n\n"
-                    last_sent += 1
-            await asyncio.sleep(0.5)
-    
+            log = await log_queue.get()
+            yield f"data: {log}\n\n"
+
     return StreamingResponse(
         event_generator(),
         media_type="text/event-stream"
-    )        
+    )     
 """
 - VideoStream класс отвечает за подключение к видеопотоку.
 - Маршрут /video_feed возвращает поток изображений, закодированных
