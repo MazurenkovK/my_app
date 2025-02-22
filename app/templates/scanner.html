@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Сканнер</h2>
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+        <!-- Видеопоток -->
+        <div>
+            <img src="{{ url_for('video_feed') }}" alt="Video Feed" style="width: 100%; max-width: 640px;">
+        </div>
+        
+        <!-- Логи -->
+        <div id="log-container" style="background: #1e1e1e; color: #fff; padding: 10px; height: 420px; max-width: 640px; overflow-y: auto;">
+            <!-- Кнопка "Следовать за логами" -->
+            <div style="position: sticky; top: 0; background: #333; padding: 5px; z-index: 1;">
+                <button onclick="enableAutoScroll()">
+                    Следовать за логами <span id="auto-scroll-status">(вкл)</span>
+                </button>
+            </div>
+            
+            <!-- Контейнер для логов -->
+            <pre id="logs" style="font-family: monospace; margin: 0; white-space: pre-wrap;"></pre>
+        </div>
+    </div>
+
+    <script>
+        const logContainer = document.getElementById('log-container');
+        const logElement = document.getElementById('logs');
+        const eventSource = new EventSource('/log_stream');
+        const autoScrollStatus = document.getElementById('auto-scroll-status');
+        
+        let autoScroll = true;
+
+        // Обработчик новых логов
+        eventSource.onmessage = function(e) {
+            // Очищаем старые логи при переполнении
+            if (logElement.childElementCount >= 500) {
+                logElement.removeChild(logElement.firstChild);
+            }
+            
+            // Добавляем новую строку
+            const newLog = document.createElement('div');
+            newLog.textContent = e.data;
+            logElement.appendChild(newLog);
+            
+            // Прокручиваем только если автоскролл активен
+            if (autoScroll) {
+                logContainer.scrollTop = logContainer.scrollHeight;
+            }
+        };
+
+        // Отслеживаем ручную прокрутку
+        logContainer.addEventListener('scroll', () => {
+            const isNearBottom = logContainer.scrollTop + logContainer.clientHeight >= logContainer.scrollHeight - 50;
+            autoScroll = isNearBottom;
+            autoScrollStatus.textContent = autoScroll ? '(вкл)' : '(выкл)';
+        });
+
+        // Включаем автоскролл при нажатии на кнопку
+        function enableAutoScroll() {
+            autoScroll = true;
+            autoScrollStatus.textContent = '(вкл)';
+            logContainer.scrollTo({
+                top: logContainer.scrollHeight,
+                behavior: 'instant'
+            });
+        }
+    </script>
+{% endblock %}

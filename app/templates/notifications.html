@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>История уведомлений</h2>
+    
+    {% if notifications %}
+        <ul>
+        {% for notification in notifications %}
+            <li>
+                <strong>{{ notification.timestamp }}</strong> - 
+                {{ notification.description }}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Нет новых уведомлений</p>
+    {% endif %}
+{% endblock %}

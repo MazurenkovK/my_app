@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ROP</title>
+</head>
+<body>
+    <header>
+        <h1>Приложение для обнаружения манометра</h1>
+        <nav>
+            <a href="/">Главная</a> |
+            <a href="/scanner">Сканнер</a> |
+            <a href="/notifications_page">Уведомления</a>          
+        </nav>
+        <hr>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
+<style>
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    .log-container {
+        border: 1px solid #444;
+        border-radius: 4px;
+    }
+</style>
