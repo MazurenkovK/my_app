@@ -1,0 +1,1434 @@
+2025-02-19 18:40:59.711 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x12521d090> attached.
+2025-02-19 18:41:34.394 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x12346d0d0> attached.
+2025-02-19 18:47:18.928 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x10d813950> attached.
+2025-02-19 18:47:24.589 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x10dc5ca50> attached.
+2025-02-19 18:48:04.659 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x12555d310> attached.
+2025-02-19 18:48:12.902 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:12.902 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[511.5 544.5 164.5]]]
+2025-02-19 18:48:13.012 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:13.013 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[546.5 512.5 160.8]]]
+2025-02-19 18:48:13.139 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:13.139 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[580.5 485.5 158.2]]]
+2025-02-19 18:48:13.242 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:13.242 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[593.5 475.5 151.5]]]
+2025-02-19 18:48:13.338 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:13.338 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[612.5 467.5 165.4]]]
+2025-02-19 18:48:13.443 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:13.444 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[626.5 461.5 151.7]]]
+2025-02-19 18:48:13.550 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:13.550 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[635.5 461.5 165.1]]]
+2025-02-19 18:48:13.672 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:13.672 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[640.5 471.5 154.7]]]
+2025-02-19 18:48:13.777 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:13.777 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[639.5 476.5 153.7]]]
+2025-02-19 18:48:13.910 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:13.910 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[639.5 481.5 154.7]]]
+2025-02-19 18:48:14.041 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:14.041 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[642.5 484.5 167.4]]]
+2025-02-19 18:48:14.151 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:14.151 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[648.5 486.5 167.4]]]
+2025-02-19 18:48:14.281 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:14.281 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[654.5 487.5 166.5]]]
+2025-02-19 18:48:14.411 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:14.411 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[655.5 486.5 153. ]]]
+2025-02-19 18:48:14.516 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:14.517 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[651.5 482.5 153.4]]]
+2025-02-19 18:48:14.643 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:14.644 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[644.5 480.5 152. ]]]
+2025-02-19 18:48:14.742 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:14.742 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[642.5 478.5 152.1]]]
+2025-02-19 18:48:14.842 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:14.842 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[641.5 478.5 164.1]]]
+2025-02-19 18:48:14.944 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:14.944 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[644.5 479.5 151.2]]]
+2025-02-19 18:48:14.945 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 377x377
+2025-02-19 18:48:14.946 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:48:14.944850+03:00, Description: Circle detected in frame
+2025-02-19 18:48:14.947 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:48:14.944850+03:00.jpg
+2025-02-19 18:48:14.948 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:48:14.944850+03:00.jpg
+2025-02-19 18:48:14.954 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 1
+2025-02-19 18:48:15.078 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:15.078 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[647.5 480.5 152.3]]]
+2025-02-19 18:48:15.209 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:15.209 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[645.5 482.5 152.3]]]
+2025-02-19 18:48:15.334 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:15.334 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[643.5 479.5 163.7]]]
+2025-02-19 18:48:15.448 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:15.448 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[646.5 483.5 152.3]]]
+2025-02-19 18:48:15.575 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:15.576 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[645.5 484.5 166. ]]]
+2025-02-19 18:48:15.682 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:15.682 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[645.5 481.5 151.7]]]
+2025-02-19 18:48:15.831 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:15.832 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[645.5 480.5 152. ]]]
+2025-02-19 18:48:15.946 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:15.946 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[644.5 479.5 164.9]]]
+2025-02-19 18:48:16.059 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:16.059 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[644.5 481.5 151.7]]]
+2025-02-19 18:48:16.174 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:16.174 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[642.5 483.5 152.3]]]
+2025-02-19 18:48:16.281 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:16.282 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[643.5 483.5 152.6]]]
+2025-02-19 18:48:16.421 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:16.421 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[642.5 482.5 151.7]]]
+2025-02-19 18:48:16.542 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:16.543 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[642.5 483.5 165.8]]]
+2025-02-19 18:48:16.651 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:16.652 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[643.5 483.5 164.8]]]
+2025-02-19 18:48:16.786 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:16.786 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[646.5 484.5 151.5]]]
+2025-02-19 18:48:16.915 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:16.915 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[646.5 483.5 165.1]]]
+2025-02-19 18:48:17.048 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:17.049 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[647.5 483.5 152.3]]]
+2025-02-19 18:48:17.183 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:17.183 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[647.5 485.5 151.9]]]
+2025-02-19 18:48:17.183 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 380x380
+2025-02-19 18:48:17.183 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:48:17.183460+03:00, Description: Circle detected in frame
+2025-02-19 18:48:17.184 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:48:17.183460+03:00.jpg
+2025-02-19 18:48:17.186 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:48:17.183460+03:00.jpg
+2025-02-19 18:48:17.188 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 2
+2025-02-19 18:48:17.314 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:17.314 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[648.5 486.5 152.2]]]
+2025-02-19 18:48:17.452 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:17.453 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[647.5 485.5 165.5]]]
+2025-02-19 18:48:17.576 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:17.576 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[646.5 485.5 151.9]]]
+2025-02-19 18:48:17.680 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:17.680 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[647.5 485.5 152.1]]]
+2025-02-19 18:48:17.817 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:17.817 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[648.5 486.5 151.7]]]
+2025-02-19 18:48:17.947 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:17.947 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[648.5 485.5 151.5]]]
+2025-02-19 18:48:18.058 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:18.058 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[648.5 485.5 151.6]]]
+2025-02-19 18:48:18.180 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:18.180 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[646.5 484.5 151.5]]]
+2025-02-19 18:48:18.291 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:18.291 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[646.5 484.5 164.1]]]
+2025-02-19 18:48:18.413 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:18.414 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[649.5 484.5 150.7]]]
+2025-02-19 18:48:18.523 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:18.523 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[650.5 482.5 163.4]]]
+2025-02-19 18:48:18.645 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:18.645 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[655.5 484.5 150.5]]]
+2025-02-19 18:48:18.752 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:18.753 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[657.5 483.5 150.4]]]
+2025-02-19 18:48:18.878 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:18.878 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[658.5 484.5 150.3]]]
+2025-02-19 18:48:18.996 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:18.996 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[657.5 482.5 149.9]]]
+2025-02-19 18:48:19.114 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:19.114 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[658.5 482.5 149.7]]]
+2025-02-19 18:48:19.214 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:19.214 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[656.5 480.5 161.9]]]
+2025-02-19 18:48:19.323 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:19.323 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[657.5 482.5 150. ]]]
+2025-02-19 18:48:19.323 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 375x375
+2025-02-19 18:48:19.323 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:48:19.323216+03:00, Description: Circle detected in frame
+2025-02-19 18:48:19.324 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:48:19.323216+03:00.jpg
+2025-02-19 18:48:19.326 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:48:19.323216+03:00.jpg
+2025-02-19 18:48:19.327 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 3
+2025-02-19 18:48:19.450 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:19.450 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[657.5 483.5 150.3]]]
+2025-02-19 18:48:19.582 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:19.582 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[657.5 482.5 149.8]]]
+2025-02-19 18:48:19.715 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:19.715 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[656.5 481.5 162.5]]]
+2025-02-19 18:48:19.849 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:19.849 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[655.5 483.5 149.9]]]
+2025-02-19 18:48:19.984 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:19.984 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[656.5 484.5 150.6]]]
+2025-02-19 18:48:20.113 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:20.113 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[655.5 486.5 149.9]]]
+2025-02-19 18:48:20.227 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:20.228 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[655.5 487.5 150.4]]]
+2025-02-19 18:48:20.345 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:20.345 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[656.5 486.5 165. ]]]
+2025-02-19 18:48:20.452 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:20.453 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[654.5 486.5 150. ]]]
+2025-02-19 18:48:20.598 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:20.598 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[655.5 486.5 150.9]]]
+2025-02-19 18:48:20.716 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:20.717 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[655.5 487.5 150.9]]]
+2025-02-19 18:48:20.844 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:20.844 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[653.5 487.5 150.4]]]
+2025-02-19 18:48:20.947 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:20.947 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[653.5 486.5 163.3]]]
+2025-02-19 18:48:21.055 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:21.055 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[654.5 486.5 150.2]]]
+2025-02-19 18:48:21.186 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:21.187 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[655.5 486.5 150.3]]]
+2025-02-19 18:48:21.330 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:21.330 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[657.5 488.5 149.7]]]
+2025-02-19 18:48:21.469 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:21.469 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[656.5 487.5 150.4]]]
+2025-02-19 18:48:21.469 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 375x375
+2025-02-19 18:48:21.469 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:48:21.469186+03:00, Description: Circle detected in frame
+2025-02-19 18:48:21.470 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:48:21.469186+03:00.jpg
+2025-02-19 18:48:21.471 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:48:21.469186+03:00.jpg
+2025-02-19 18:48:21.473 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 4
+2025-02-19 18:48:21.587 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:21.588 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[656.5 485.5 161.6]]]
+2025-02-19 18:48:21.718 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:21.718 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[657.5 485.5 150.3]]]
+2025-02-19 18:48:21.852 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:21.853 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[658.5 485.5 163.3]]]
+2025-02-19 18:48:21.981 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:21.981 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[661.5 485.5 150.1]]]
+2025-02-19 18:48:22.088 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:22.088 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[662.5 484.5 162.3]]]
+2025-02-19 18:48:22.222 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:22.222 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[664.5 484.5 163. ]]]
+2025-02-19 18:48:22.346 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:22.346 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[668.5 483.5 148.7]]]
+2025-02-19 18:48:22.447 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:22.447 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[672.5 484.5 164.3]]]
+2025-02-19 18:48:22.549 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:22.549 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[671.5 483.5 162.4]]]
+2025-02-19 18:48:22.656 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:22.656 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[673.5 484.5 148.6]]]
+2025-02-19 18:48:22.783 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:22.783 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[678.5 484.5 162.4]]]
+2025-02-19 18:48:22.882 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:22.882 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[693.5 488.5 154.5]]]
+2025-02-19 18:48:22.984 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:22.984 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[723.5 473.5 150.9]]]
+2025-02-19 18:48:23.403 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:23.403 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1129.5  342.5  150.1]]]
+2025-02-19 18:48:23.519 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:23.519 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1196.5  340.5  153.9]]]
+2025-02-19 18:48:23.660 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:23.660 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1208.5  357.5  160.2]]]
+2025-02-19 18:48:23.660 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 400x400
+2025-02-19 18:48:23.661 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:48:23.660614+03:00, Description: Circle detected in frame
+2025-02-19 18:48:23.663 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:48:23.660614+03:00.jpg
+2025-02-19 18:48:23.664 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:48:23.660614+03:00.jpg
+2025-02-19 18:48:23.666 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 5
+2025-02-19 18:48:23.785 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:23.786 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1191.5  319.5  141.9]]]
+2025-02-19 18:48:23.917 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:23.917 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1161.5  271.5  127.3]]]
+2025-02-19 18:48:25.719 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:25.719 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1210.5  324.5   89.5]]]
+2025-02-19 18:48:26.059 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:26.060 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1231.5  301.5   93.7]]]
+2025-02-19 18:48:26.060 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 235x235
+2025-02-19 18:48:26.060 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:48:26.059975+03:00, Description: Circle detected in frame
+2025-02-19 18:48:26.060 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:48:26.059975+03:00.jpg
+2025-02-19 18:48:26.061 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:48:26.059975+03:00.jpg
+2025-02-19 18:48:26.062 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 6
+2025-02-19 18:48:26.193 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:26.193 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1249.5  297.5   91.8]]]
+2025-02-19 18:48:26.319 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:26.320 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1250.5  285.5  105.1]]]
+2025-02-19 18:48:26.460 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:26.460 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1254.5  283.5   93.2]]]
+2025-02-19 18:48:26.593 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:26.593 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1265.5  285.5   95.8]]]
+2025-02-19 18:48:26.729 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:26.729 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1273.5  293.5   99. ]]]
+2025-02-19 18:48:26.863 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:26.863 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1280.5  297.5   97.4]]]
+2025-02-19 18:48:26.991 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:26.991 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1281.5  302.5   97.6]]]
+2025-02-19 18:48:27.125 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:27.126 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1284.5  309.5   95.2]]]
+2025-02-19 18:48:27.262 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:27.262 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1285.5  315.5   88.3]]]
+2025-02-19 18:48:27.391 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:27.391 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1284.5  334.5   94.9]]]
+2025-02-19 18:48:27.525 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:27.526 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1272.5  348.5   93.6]]]
+2025-02-19 18:48:27.659 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:27.660 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1264.5  367.5   84.1]]]
+2025-02-19 18:48:27.790 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:27.791 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1258.5  383.5   82.9]]]
+2025-02-19 18:48:27.923 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:27.924 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1259.5  403.5   75.8]]]
+2025-02-19 18:48:28.062 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:28.062 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1256.5  413.5   85.2]]]
+2025-02-19 18:48:28.189 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:28.189 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1239.5  416.5   86.8]]]
+2025-02-19 18:48:28.189 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 217x217
+2025-02-19 18:48:28.190 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:48:28.189724+03:00, Description: Circle detected in frame
+2025-02-19 18:48:28.190 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:48:28.189724+03:00.jpg
+2025-02-19 18:48:28.190 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:48:28.189724+03:00.jpg
+2025-02-19 18:48:28.192 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 7
+2025-02-19 18:48:33.791 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:33.792 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[849.5 329.5  77.1]]]
+2025-02-19 18:48:33.905 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:33.906 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[840.5 326.5  78.3]]]
+2025-02-19 18:48:34.038 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:34.039 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[822.5 324.5  78.3]]]
+2025-02-19 18:48:34.157 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:34.158 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[807.5 325.5  78.8]]]
+2025-02-19 18:48:34.267 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:34.267 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[798.5 324.5  77.3]]]
+2025-02-19 18:48:34.401 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:34.401 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[794.5 328.5  87.4]]]
+2025-02-19 18:48:34.530 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:34.530 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[793.5 325.5  76.1]]]
+2025-02-19 18:48:34.662 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:34.662 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[787.5 327.5  78.3]]]
+2025-02-19 18:48:34.794 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:34.795 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[769.5 326.5  78.6]]]
+2025-02-19 18:48:36.701 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:36.701 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[704.5 328.5  77.6]]]
+2025-02-19 18:48:36.701 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 195x195
+2025-02-19 18:48:36.702 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:48:36.701701+03:00, Description: Circle detected in frame
+2025-02-19 18:48:36.702 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:48:36.701701+03:00.jpg
+2025-02-19 18:48:36.702 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:48:36.701701+03:00.jpg
+2025-02-19 18:48:36.704 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 8
+2025-02-19 18:48:36.842 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:36.842 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[709.5 328.5  75.9]]]
+2025-02-19 18:48:36.968 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:36.968 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[713.5 333.5  86.4]]]
+2025-02-19 18:48:37.101 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:37.101 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[709.5 332.5  75. ]]]
+2025-02-19 18:48:38.305 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:38.306 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[721.5 343.5  82.4]]]
+2025-02-19 18:48:42.901 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:42.902 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1106.5  373.5   82.9]]]
+2025-02-19 18:48:42.902 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 207x207
+2025-02-19 18:48:42.902 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:48:42.902038+03:00, Description: Circle detected in frame
+2025-02-19 18:48:42.902 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:48:42.902038+03:00.jpg
+2025-02-19 18:48:42.903 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:48:42.902038+03:00.jpg
+2025-02-19 18:48:42.904 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 9
+2025-02-19 18:48:46.005 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:46.005 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1100.5  372.5   84.1]]]
+2025-02-19 18:48:46.142 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:46.142 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1100.5  367.5   76.9]]]
+2025-02-19 18:48:46.272 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:46.272 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1094.5  364.5   74.8]]]
+2025-02-19 18:48:46.409 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:46.409 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1091.5  362.5   77.2]]]
+2025-02-19 18:48:46.538 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:46.538 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1085.5  362.5   76.9]]]
+2025-02-19 18:48:46.675 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:46.676 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1080.5  359.5   76.5]]]
+2025-02-19 18:48:46.809 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:46.809 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1074.5  358.5   74.6]]]
+2025-02-19 18:48:46.938 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:46.939 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1075.5  358.5   75.7]]]
+2025-02-19 18:48:47.082 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:47.083 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1077.5  358.5   77.6]]]
+2025-02-19 18:48:47.208 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:48:47.208 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1073.5  356.5   76. ]]]
+2025-02-19 18:49:29.331 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:29.332 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[803.5 280.5  95.2]]]
+2025-02-19 18:49:29.332 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 237x237
+2025-02-19 18:49:29.332 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:49:29.332264+03:00, Description: Circle detected in frame
+2025-02-19 18:49:29.333 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:49:29.332264+03:00.jpg
+2025-02-19 18:49:29.333 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:49:29.332264+03:00.jpg
+2025-02-19 18:49:29.335 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 10
+2025-02-19 18:49:29.466 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:29.467 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[837.5 253.5  93.8]]]
+2025-02-19 18:49:29.602 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:29.603 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[871.5 250.5  99.8]]]
+2025-02-19 18:49:29.744 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:29.744 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[892.5 259.5  90.1]]]
+2025-02-19 18:49:29.876 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:29.877 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[903.5 259.5  98.6]]]
+2025-02-19 18:49:30.036 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:30.036 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[907.5 261.5  96.6]]]
+2025-02-19 18:49:30.167 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:30.167 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[900.5 264.5  87.8]]]
+2025-02-19 18:49:30.305 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:30.305 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[902.5 263.5  86.5]]]
+2025-02-19 18:49:30.444 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:30.444 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[902.5 270.5  89.5]]]
+2025-02-19 18:49:30.571 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:30.571 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[898.5 268.5  89.9]]]
+2025-02-19 18:49:30.707 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:30.707 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[886.5 272.5  88.6]]]
+2025-02-19 18:49:30.838 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:30.838 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[866.5 281.5  88.6]]]
+2025-02-19 18:49:30.964 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:30.965 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[824.5 286.5  91.8]]]
+2025-02-19 18:49:31.072 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:31.073 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[783.5 294.5  85.9]]]
+2025-02-19 18:49:31.898 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:31.898 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[518.5 353.5  90.1]]]
+2025-02-19 18:49:31.898 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 225x225
+2025-02-19 18:49:31.899 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:49:31.898655+03:00, Description: Circle detected in frame
+2025-02-19 18:49:31.899 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:49:31.898655+03:00.jpg
+2025-02-19 18:49:31.899 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:49:31.898655+03:00.jpg
+2025-02-19 18:49:31.901 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 11
+2025-02-19 18:49:33.795 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:33.795 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[644.5 323.5  85.9]]]
+2025-02-19 18:49:34.504 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:34.505 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[982.5 338.5  83.5]]]
+2025-02-19 18:49:34.637 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:34.637 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1017.5  352.5   81.6]]]
+2025-02-19 18:49:34.768 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:34.768 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1040.5  373.5   91.3]]]
+2025-02-19 18:49:34.879 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:34.879 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1056.5  386.5   83.3]]]
+2025-02-19 18:49:35.025 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:35.025 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1068.5  398.5   82.3]]]
+2025-02-19 18:49:35.155 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:35.156 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1081.5  414.5   82.3]]]
+2025-02-19 18:49:35.288 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:35.289 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1090.5  424.5   78.9]]]
+2025-02-19 18:49:35.410 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:35.410 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1108.5  432.5   86.1]]]
+2025-02-19 18:49:35.671 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:35.671 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1112.5  441.5   78.7]]]
+2025-02-19 18:49:35.799 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:35.803 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1121.5  446.5   84.6]]]
+2025-02-19 18:49:35.803 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 212x212
+2025-02-19 18:49:35.803 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:49:35.803282+03:00, Description: Circle detected in frame
+2025-02-19 18:49:35.804 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:49:35.803282+03:00.jpg
+2025-02-19 18:49:35.806 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:49:35.803282+03:00.jpg
+2025-02-19 18:49:35.811 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 12
+2025-02-19 18:49:35.941 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:35.941 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1113.5  450.5   83.6]]]
+2025-02-19 18:49:36.087 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:36.087 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1096.5  457.5   85.9]]]
+2025-02-19 18:49:36.199 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:36.199 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1081.5  446.5   80.6]]]
+2025-02-19 18:49:36.307 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:36.307 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1058.5  433.5   86.9]]]
+2025-02-19 18:49:39.159 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:39.159 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[518.5 279.5 137.1]]]
+2025-02-19 18:49:39.159 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 342x342
+2025-02-19 18:49:39.160 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:49:39.159557+03:00, Description: Circle detected in frame
+2025-02-19 18:49:39.161 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:49:39.159557+03:00.jpg
+2025-02-19 18:49:39.161 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:49:39.159557+03:00.jpg
+2025-02-19 18:49:39.163 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 13
+2025-02-19 18:49:39.273 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:39.274 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[547.5 302.5 139.7]]]
+2025-02-19 18:49:39.395 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:39.395 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[588.5 326.5 141.5]]]
+2025-02-19 18:49:39.505 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:39.506 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[602.5 334.5 131.2]]]
+2025-02-19 18:49:39.601 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:39.601 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[612.5 338.5 134.1]]]
+2025-02-19 18:49:39.706 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:39.706 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[619.5 343.5 131.4]]]
+2025-02-19 18:49:39.837 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:39.837 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[620.5 350.5 129.6]]]
+2025-02-19 18:49:39.938 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:39.939 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[621.5 340.5 121.5]]]
+2025-02-19 18:49:40.040 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:40.040 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[623.5 345.5 134.7]]]
+2025-02-19 18:49:40.168 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:40.168 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[626.5 356.5 128.9]]]
+2025-02-19 18:49:40.272 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:40.272 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[629.5 364.5 128.1]]]
+2025-02-19 18:49:40.371 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:40.372 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[635.5 388.5 128.7]]]
+2025-02-19 18:49:40.468 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:40.468 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[649.5 430.5 123.3]]]
+2025-02-19 18:49:40.568 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:40.568 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[660.5 465.5 117.4]]]
+2025-02-19 18:49:40.665 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:40.666 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[657.5 500.5 109.7]]]
+2025-02-19 18:49:40.764 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:40.765 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[668.5 543.5 102.3]]]
+2025-02-19 18:49:40.965 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:40.965 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[700.5 644.5  98.5]]]
+2025-02-19 18:49:41.072 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:41.073 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[706.5 682.5 103.2]]]
+2025-02-19 18:49:41.170 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:41.171 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[715.5 715.5 105.7]]]
+2025-02-19 18:49:41.277 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:41.277 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[719.5 714.5  98.7]]]
+2025-02-19 18:49:41.277 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 247x247
+2025-02-19 18:49:41.278 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:49:41.277653+03:00, Description: Circle detected in frame
+2025-02-19 18:49:41.278 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:49:41.277653+03:00.jpg
+2025-02-19 18:49:41.279 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:49:41.277653+03:00.jpg
+2025-02-19 18:49:41.281 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 14
+2025-02-19 18:49:41.407 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:41.408 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[714.5 709.5  98.1]]]
+2025-02-19 18:49:41.534 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:41.534 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[715.5 714.5 100.7]]]
+2025-02-19 18:49:41.646 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:41.647 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[714.5 712.5 100.2]]]
+2025-02-19 18:49:41.769 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:41.769 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[713.5 710.5  89.3]]]
+2025-02-19 18:49:41.873 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:41.873 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[708.5 712.5  99.5]]]
+2025-02-19 18:49:41.985 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:41.985 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[711.5 713.5  98.5]]]
+2025-02-19 18:49:42.105 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:42.105 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[713.5 713.5  98.7]]]
+2025-02-19 18:49:42.208 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:42.208 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[713.5 713.5  99.2]]]
+2025-02-19 18:49:42.314 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:42.314 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[714.5 714.5  91.5]]]
+2025-02-19 18:49:42.440 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:42.441 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[714.5 727.5 100.5]]]
+2025-02-19 18:49:42.546 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:42.546 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[715.5 713.5  99.5]]]
+2025-02-19 18:49:42.676 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:42.676 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[717.5 726.5 102.9]]]
+2025-02-19 18:49:42.811 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:42.811 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[716.5 712.5  98. ]]]
+2025-02-19 18:49:42.947 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:42.947 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[719.5 713.5  99.3]]]
+2025-02-19 18:49:43.082 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:43.082 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[719.5 714.5 100.3]]]
+2025-02-19 18:49:43.207 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:43.208 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[728.5 721.5 110.3]]]
+2025-02-19 18:49:43.313 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:43.313 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[721.5 714.5 100. ]]]
+2025-02-19 18:49:43.443 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:43.443 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[726.5 721.5  99.4]]]
+2025-02-19 18:49:43.443 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 247x247
+2025-02-19 18:49:43.444 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:49:43.443764+03:00, Description: Circle detected in frame
+2025-02-19 18:49:43.444 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:49:43.443764+03:00.jpg
+2025-02-19 18:49:43.445 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:49:43.443764+03:00.jpg
+2025-02-19 18:49:43.446 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 15
+2025-02-19 18:49:43.571 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:43.571 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[722.5 716.5  93.3]]]
+2025-02-19 18:49:43.674 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:43.674 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[729.5 722.5 109. ]]]
+2025-02-19 18:49:43.778 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:43.779 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[722.5 714.5 100.7]]]
+2025-02-19 18:49:43.907 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:43.907 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[731.5 722.5 109.8]]]
+2025-02-19 18:49:44.018 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:44.018 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[724.5 713.5  99. ]]]
+2025-02-19 18:49:44.142 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:44.142 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[725.5 716.5  93.2]]]
+2025-02-19 18:49:44.259 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:44.259 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[725.5 724.5  94.5]]]
+2025-02-19 18:49:44.372 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:44.373 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[728.5 719.5  97.3]]]
+2025-02-19 18:49:44.479 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:44.479 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[724.5 727.5  93.8]]]
+2025-02-19 18:49:44.603 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:44.603 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[724.5 715.5  92.3]]]
+2025-02-19 18:49:44.709 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:44.709 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[724.5 714.5  99.2]]]
+2025-02-19 18:49:44.829 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:44.829 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[724.5 715.5  99.9]]]
+2025-02-19 18:49:44.949 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:44.949 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[724.5 718.5 101.8]]]
+2025-02-19 18:49:45.077 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:45.078 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[723.5 717.5 100.9]]]
+2025-02-19 18:49:45.218 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:45.219 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[722.5 717.5 100.5]]]
+2025-02-19 18:49:45.341 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:45.341 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[724.5 716.5 100.5]]]
+2025-02-19 18:49:45.447 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:45.448 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[723.5 716.5 100.3]]]
+2025-02-19 18:49:45.575 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:45.575 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[722.5 717.5 100.5]]]
+2025-02-19 18:49:45.575 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 250x250
+2025-02-19 18:49:45.576 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:49:45.575790+03:00, Description: Circle detected in frame
+2025-02-19 18:49:45.576 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:49:45.575790+03:00.jpg
+2025-02-19 18:49:45.577 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:49:45.575790+03:00.jpg
+2025-02-19 18:49:45.578 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 16
+2025-02-19 18:49:45.709 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:45.709 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[723.5 717.5 100.4]]]
+2025-02-19 18:49:45.814 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:45.815 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[724.5 717.5  92.3]]]
+2025-02-19 18:49:45.948 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:45.948 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[723.5 716.5  99.6]]]
+2025-02-19 18:49:46.076 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:46.076 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[729.5 724.5 100.4]]]
+2025-02-19 18:49:46.183 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:46.183 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[726.5 721.5  96.7]]]
+2025-02-19 18:49:46.311 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:46.311 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[724.5 719.5  93.5]]]
+2025-02-19 18:49:46.435 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:46.436 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[730.5 724.5 100.8]]]
+2025-02-19 18:49:46.539 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:46.540 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[719.5 724.5  99.4]]]
+2025-02-19 18:49:46.652 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:46.652 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[722.5 718.5 100. ]]]
+2025-02-19 18:49:46.774 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:46.774 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[724.5 718.5  92.4]]]
+2025-02-19 18:49:46.886 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:46.886 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[724.5 717.5 100.5]]]
+2025-02-19 18:49:47.011 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:47.011 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[725.5 729.5 102.1]]]
+2025-02-19 18:49:47.138 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:47.139 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[722.5 723.5  99.3]]]
+2025-02-19 18:49:47.242 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:47.242 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[729.5 715.5 102.1]]]
+2025-02-19 18:49:47.344 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:47.345 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[735.5 704.5 107.3]]]
+2025-02-19 18:49:47.465 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:47.465 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[764.5 664.5 105. ]]]
+2025-02-19 18:49:47.567 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:47.567 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[799.5 623.5 112.7]]]
+2025-02-19 18:49:47.965 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:47.966 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1034.5  482.5  120.9]]]
+2025-02-19 18:49:47.966 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 302x302
+2025-02-19 18:49:47.966 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:49:47.965936+03:00, Description: Circle detected in frame
+2025-02-19 18:49:47.967 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:49:47.965936+03:00.jpg
+2025-02-19 18:49:47.967 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:49:47.965936+03:00.jpg
+2025-02-19 18:49:47.968 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 17
+2025-02-19 18:49:48.079 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:48.080 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1069.5  470.5  125.1]]]
+2025-02-19 18:49:48.205 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:48.205 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1086.5  445.5  136.7]]]
+2025-02-19 18:49:48.316 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:48.316 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1104.5  434.5  129.9]]]
+2025-02-19 18:49:48.445 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:48.446 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1097.5  426.5  133.9]]]
+2025-02-19 18:49:48.581 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:48.581 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1084.5  421.5  123.2]]]
+2025-02-19 18:49:48.711 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:48.711 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1076.5  419.5  134.7]]]
+2025-02-19 18:49:48.818 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:48.818 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1070.5  426.5  124.2]]]
+2025-02-19 18:49:48.945 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:48.945 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1067.5  430.5  125.5]]]
+2025-02-19 18:49:49.057 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:49.057 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1059.5  434.5  138.2]]]
+2025-02-19 18:49:57.567 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:57.567 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[669.5 510.5 157.8]]]
+2025-02-19 18:49:57.567 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 395x395
+2025-02-19 18:49:57.568 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 16:49:57.567542+03:00, Description: Circle detected in frame
+2025-02-19 18:49:57.569 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T16:49:57.567542+03:00.jpg
+2025-02-19 18:49:57.569 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T16:49:57.567542+03:00.jpg
+2025-02-19 18:49:57.571 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 18
+2025-02-19 18:49:57.677 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:57.677 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[688.5 504.5 155.3]]]
+2025-02-19 18:49:57.774 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:57.775 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[688.5 504.5 160.7]]]
+2025-02-19 18:49:57.881 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:57.881 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[690.5 501.5 160.5]]]
+2025-02-19 18:49:57.978 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:57.979 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[692.5 498.5 156.9]]]
+2025-02-19 18:49:58.075 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:58.076 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[686.5 494.5 158. ]]]
+2025-02-19 18:49:58.180 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:58.180 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[680.5 488.5 156.5]]]
+2025-02-19 18:49:58.284 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:58.285 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[670.5 487.5 158. ]]]
+2025-02-19 18:49:58.381 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:58.381 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[664.5 488.5 157.7]]]
+2025-02-19 18:49:58.478 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:58.478 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[664.5 489.5 162.5]]]
+2025-02-19 18:49:58.580 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 18:49:58.581 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[658.5 494.5 162.4]]]
+2025-02-19 18:50:08.678 | INFO     | app.repository.movement_repository:get_movements:34 - Retrieving movements.
+2025-02-19 18:50:08.681 | INFO     | app.main:notifications_page:118 - Total movements found: 18
+2025-02-19 18:50:11.837 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x1255dead0> attached.
+2025-02-19 19:27:49.273 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x10fc6d590> attached.
+2025-02-19 19:27:52.465 | INFO     | app.repository.movement_repository:get_movements:34 - Retrieving movements.
+2025-02-19 19:27:52.466 | INFO     | app.main:notifications_page:118 - Total movements found: 0
+2025-02-19 19:27:53.587 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x10fcc7fd0> attached.
+2025-02-19 19:28:34.179 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:34.179 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[636.5 485.5 154.4]]]
+2025-02-19 19:28:34.283 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:34.283 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[623.5 457.5 152.8]]]
+2025-02-19 19:28:34.384 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:34.385 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[623.5 450.5 154.7]]]
+2025-02-19 19:28:34.487 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:34.487 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[631.5 456.5 156.8]]]
+2025-02-19 19:28:34.587 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:34.588 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[640.5 462.5 173.5]]]
+2025-02-19 19:28:34.691 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:34.691 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[638.5 469.5 156.9]]]
+2025-02-19 19:28:34.788 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:34.788 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[634.5 472.5 156.2]]]
+2025-02-19 19:28:34.887 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:34.888 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[629.5 467.5 170.6]]]
+2025-02-19 19:28:34.990 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:34.990 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[632.5 464.5 171.4]]]
+2025-02-19 19:28:35.087 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:35.087 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[647.5 464.5 159.9]]]
+2025-02-19 19:28:35.188 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:35.188 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[667.5 467.5 172. ]]]
+2025-02-19 19:28:35.291 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:35.291 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[675.5 474.5 166.8]]]
+2025-02-19 19:28:35.390 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:35.391 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[682.5 474.5 169.1]]]
+2025-02-19 19:28:35.486 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:35.487 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[656.5 474.5 150.1]]]
+2025-02-19 19:28:35.583 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:35.583 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[633.5 467.5 166.5]]]
+2025-02-19 19:28:35.683 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:35.683 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[602.5 437.5 150.5]]]
+2025-02-19 19:28:35.779 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:35.780 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[591.5 399.5 134.5]]]
+2025-02-19 19:28:36.789 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:36.790 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[735.5 435.5  87.3]]]
+2025-02-19 19:28:36.790 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 217x217
+2025-02-19 19:28:36.790 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:28:36.789963+03:00, Description: Circle detected in frame
+2025-02-19 19:28:36.790 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:28:36.789963+03:00.jpg
+2025-02-19 19:28:36.791 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:28:36.789963+03:00.jpg
+2025-02-19 19:28:36.798 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 19
+2025-02-19 19:28:36.988 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:36.988 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[759.5 428.5  91.5]]]
+2025-02-19 19:28:37.090 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:37.090 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[773.5 417.5  83.2]]]
+2025-02-19 19:28:37.193 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:37.193 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[775.5 400.5  83.1]]]
+2025-02-19 19:28:37.291 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:37.291 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[770.5 387.5  81.8]]]
+2025-02-19 19:28:37.389 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:37.389 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[765.5 373.5  84.3]]]
+2025-02-19 19:28:37.496 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:37.496 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[762.5 373.5  94.3]]]
+2025-02-19 19:28:37.595 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:37.595 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[759.5 372.5  95.3]]]
+2025-02-19 19:28:37.691 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:37.691 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[755.5 370.5  85.8]]]
+2025-02-19 19:28:37.794 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:37.795 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[750.5 375.5  87.3]]]
+2025-02-19 19:28:37.896 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:37.896 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[742.5 370.5  83.8]]]
+2025-02-19 19:28:37.995 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:37.995 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[738.5 374.5  96.2]]]
+2025-02-19 19:28:38.093 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:38.093 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[738.5 373.5  95.9]]]
+2025-02-19 19:28:38.195 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:38.195 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[741.5 366.5  86.5]]]
+2025-02-19 19:28:38.294 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:38.294 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[741.5 370.5  93.2]]]
+2025-02-19 19:28:38.392 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:38.392 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[737.5 367.5  85.3]]]
+2025-02-19 19:28:38.488 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:38.488 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[733.5 368.5  95. ]]]
+2025-02-19 19:28:38.589 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:38.590 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[733.5 357.5  86. ]]]
+2025-02-19 19:28:38.691 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:38.691 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[729.5 341.5  89.7]]]
+2025-02-19 19:28:38.788 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:38.788 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[720.5 313.5  87.3]]]
+2025-02-19 19:28:39.088 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:39.088 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[658.5 199.5  99.3]]]
+2025-02-19 19:28:39.088 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 247x247
+2025-02-19 19:28:39.088 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:28:39.088623+03:00, Description: Circle detected in frame
+2025-02-19 19:28:39.089 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:28:39.088623+03:00.jpg
+2025-02-19 19:28:39.089 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:28:39.088623+03:00.jpg
+2025-02-19 19:28:39.091 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 20
+2025-02-19 19:28:40.907 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:40.907 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1313.5  378.5  228.5]]]
+2025-02-19 19:28:41.012 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:41.012 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1293.5  400.5  235.4]]]
+2025-02-19 19:28:41.115 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:41.115 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1278.5  411.5  232.3]]]
+2025-02-19 19:28:41.237 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:41.237 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1265.5  426.5  227.6]]]
+2025-02-19 19:28:41.342 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:41.342 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1258.5  433.5  221.1]]]
+2025-02-19 19:28:41.445 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:41.446 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1224.5  452.5  225.1]]]
+2025-02-19 19:28:41.545 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:41.545 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1214.5  443.5  235.9]]]
+2025-02-19 19:28:41.642 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:41.643 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1215.5  445.5  223. ]]]
+2025-02-19 19:28:41.743 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:41.743 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1206.5  438.5  221.6]]]
+2025-02-19 19:28:41.848 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:41.848 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1180.5  441.5  200.3]]]
+2025-02-19 19:28:41.977 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:41.978 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1213.5  434.5  220.9]]]
+2025-02-19 19:28:42.080 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:42.080 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1211.5  450.5  218.6]]]
+2025-02-19 19:28:42.209 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:42.210 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1223.5  437.5  222.3]]]
+2025-02-19 19:28:42.311 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:42.311 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1233.5  436.5  223.5]]]
+2025-02-19 19:28:42.411 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:42.411 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1231.5  434.5  220.3]]]
+2025-02-19 19:28:42.510 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:42.511 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1261.5  434.5  223.7]]]
+2025-02-19 19:28:42.613 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:42.613 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1267.5  424.5  217.6]]]
+2025-02-19 19:28:42.716 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:42.716 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1287.5  397.5  186.1]]]
+2025-02-19 19:28:42.839 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:42.839 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1271.5  414.5  201.4]]]
+2025-02-19 19:28:42.949 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:42.950 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1278.5  428.5  164.8]]]
+2025-02-19 19:28:42.950 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 412x412
+2025-02-19 19:28:42.950 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:28:42.950129+03:00, Description: Circle detected in frame
+2025-02-19 19:28:42.951 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:28:42.950129+03:00.jpg
+2025-02-19 19:28:42.952 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:28:42.950129+03:00.jpg
+2025-02-19 19:28:42.955 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 21
+2025-02-19 19:28:43.078 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:43.078 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1265.5  425.5  173. ]]]
+2025-02-19 19:28:43.180 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:43.180 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1244.5  427.5  156.1]]]
+2025-02-19 19:28:43.501 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:43.502 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1190.5  417.5  158.9]]]
+2025-02-19 19:28:44.905 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:44.905 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1076.5  362.5  172.9]]]
+2025-02-19 19:28:45.010 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:45.010 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1067.5  376.5  183.6]]]
+2025-02-19 19:28:45.113 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:45.113 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1066.5  384.5  183.6]]]
+2025-02-19 19:28:45.113 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 460x460
+2025-02-19 19:28:45.114 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:28:45.113568+03:00, Description: Circle detected in frame
+2025-02-19 19:28:45.115 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:28:45.113568+03:00.jpg
+2025-02-19 19:28:45.116 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:28:45.113568+03:00.jpg
+2025-02-19 19:28:45.120 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 22
+2025-02-19 19:28:46.944 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:46.944 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1028.5  412.5  141.7]]]
+2025-02-19 19:28:47.047 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:47.048 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1027.5  406.5  158. ]]]
+2025-02-19 19:28:47.149 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:47.149 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1022.5  403.5  161.3]]]
+2025-02-19 19:28:47.247 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:47.247 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1014.5  398.5  153.2]]]
+2025-02-19 19:28:47.351 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:47.352 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1005.5  364.5  153.8]]]
+2025-02-19 19:28:47.478 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:47.478 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[990.5 378.5 186.7]]]
+2025-02-19 19:28:47.581 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:47.582 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[989.5 376.5 187. ]]]
+2025-02-19 19:28:47.683 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:47.683 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[989.5 381.5 185.8]]]
+2025-02-19 19:28:47.784 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:47.784 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[983.5 379.5 177. ]]]
+2025-02-19 19:28:47.887 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:47.888 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[988.5 377.5 187.5]]]
+2025-02-19 19:28:48.017 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:48.017 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[986.5 376.5 186.9]]]
+2025-02-19 19:28:48.117 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:48.117 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[987.5 369.5 181. ]]]
+2025-02-19 19:28:48.217 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:48.217 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[985.5 376.5 187.9]]]
+2025-02-19 19:28:48.319 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:48.319 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[982.5 374.5 187.2]]]
+2025-02-19 19:28:48.444 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:48.444 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[988.5 383.5 179.7]]]
+2025-02-19 19:28:48.548 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:48.549 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[984.5 368.5 180.3]]]
+2025-02-19 19:28:48.652 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:48.653 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[982.5 379.5 186.3]]]
+2025-02-19 19:28:48.757 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:48.757 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[978.5 373.5 186.6]]]
+2025-02-19 19:28:48.879 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:48.880 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[976.5 372.5 187.3]]]
+2025-02-19 19:28:48.984 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:48.985 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[984.5 359.5 156.7]]]
+2025-02-19 19:28:48.985 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 392x392
+2025-02-19 19:28:48.985 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:28:48.985147+03:00, Description: Circle detected in frame
+2025-02-19 19:28:48.986 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:28:48.985147+03:00.jpg
+2025-02-19 19:28:48.987 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:28:48.985147+03:00.jpg
+2025-02-19 19:28:48.989 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 23
+2025-02-19 19:28:49.114 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:49.114 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[979.5 376.5 187.8]]]
+2025-02-19 19:28:49.220 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:49.220 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[979.5 374.5 187.8]]]
+2025-02-19 19:28:49.349 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:49.349 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[970.5 368.5 186. ]]]
+2025-02-19 19:28:49.452 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:49.453 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[963.5 372.5 178.6]]]
+2025-02-19 19:28:49.554 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:49.554 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[972.5 376.5 179.4]]]
+2025-02-19 19:28:49.686 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:49.687 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[963.5 367.5 186.7]]]
+2025-02-19 19:28:49.791 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:49.791 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[958.5 362.5 186.3]]]
+2025-02-19 19:28:49.910 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:49.910 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[951.5 360.5 188.6]]]
+2025-02-19 19:28:50.013 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:50.014 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[945.5 355.5 186.3]]]
+2025-02-19 19:28:50.121 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:50.121 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[945.5 362.5 191.2]]]
+2025-02-19 19:28:50.248 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:50.248 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[946.5 364.5 176.5]]]
+2025-02-19 19:28:50.349 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:50.349 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[949.5 373.5 184.9]]]
+2025-02-19 19:28:50.451 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:50.452 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[941.5 373.5 191.9]]]
+2025-02-19 19:28:50.556 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:50.556 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[946.5 375.5 185. ]]]
+2025-02-19 19:28:56.479 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:56.479 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[826.5 371.5 195.9]]]
+2025-02-19 19:28:56.479 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 490x490
+2025-02-19 19:28:56.480 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:28:56.479814+03:00, Description: Circle detected in frame
+2025-02-19 19:28:56.481 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:28:56.479814+03:00.jpg
+2025-02-19 19:28:56.482 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:28:56.479814+03:00.jpg
+2025-02-19 19:28:56.485 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 24
+2025-02-19 19:28:56.589 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:56.589 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[821.5 372.5 197. ]]]
+2025-02-19 19:28:56.690 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:56.690 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[816.5 373.5 184.4]]]
+2025-02-19 19:28:56.788 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:56.788 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[814.5 369.5 200.6]]]
+2025-02-19 19:28:56.889 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:56.890 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[816.5 371.5 186.6]]]
+2025-02-19 19:28:56.990 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:56.991 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[816.5 370.5 201.9]]]
+2025-02-19 19:28:57.093 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:57.093 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[819.5 366.5 199.1]]]
+2025-02-19 19:28:57.215 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:57.215 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[823.5 363.5 198.4]]]
+2025-02-19 19:28:57.322 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:57.322 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[821.5 366.5 184.4]]]
+2025-02-19 19:28:57.424 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:57.424 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[820.5 366.5 198.4]]]
+2025-02-19 19:28:57.527 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:57.527 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[827.5 359.5 195.3]]]
+2025-02-19 19:28:57.647 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:57.648 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[826.5 367.5 188.7]]]
+2025-02-19 19:28:57.754 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:57.754 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[821.5 362.5 197.5]]]
+2025-02-19 19:28:57.854 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:57.855 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[825.5 370.5 190.8]]]
+2025-02-19 19:28:57.956 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:57.957 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[825.5 369.5 190.1]]]
+2025-02-19 19:28:58.058 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:58.058 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[824.5 369.5 189.4]]]
+2025-02-19 19:28:58.159 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:58.160 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[822.5 368.5 202. ]]]
+2025-02-19 19:28:58.283 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:58.283 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[818.5 365.5 182.6]]]
+2025-02-19 19:28:58.388 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:58.389 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[822.5 362.5 198.6]]]
+2025-02-19 19:28:58.489 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:58.489 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[820.5 367.5 188.6]]]
+2025-02-19 19:28:58.588 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:58.588 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[817.5 361.5 184. ]]]
+2025-02-19 19:28:58.588 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 460x460
+2025-02-19 19:28:58.589 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:28:58.588690+03:00, Description: Circle detected in frame
+2025-02-19 19:28:58.590 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:28:58.588690+03:00.jpg
+2025-02-19 19:28:58.591 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:28:58.588690+03:00.jpg
+2025-02-19 19:28:58.593 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 25
+2025-02-19 19:28:58.720 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:58.720 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[820.5 368.5 189.9]]]
+2025-02-19 19:28:58.821 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:58.822 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[814.5 363.5 182.8]]]
+2025-02-19 19:28:58.924 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:58.925 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[817.5 369.5 189.7]]]
+2025-02-19 19:28:59.021 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:59.022 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[810.5 361.5 197.5]]]
+2025-02-19 19:28:59.119 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:59.120 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[814.5 366.5 188.3]]]
+2025-02-19 19:28:59.229 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:59.229 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[809.5 359.5 196.5]]]
+2025-02-19 19:28:59.353 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:59.354 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[811.5 370.5 192.5]]]
+2025-02-19 19:28:59.454 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:59.455 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[804.5 360.5 198.5]]]
+2025-02-19 19:28:59.562 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:59.563 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[806.5 366.5 188.6]]]
+2025-02-19 19:28:59.683 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:59.683 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[809.5 365.5 189.2]]]
+2025-02-19 19:28:59.788 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:59.789 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[804.5 365.5 188.9]]]
+2025-02-19 19:28:59.890 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:59.890 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[798.5 360.5 185. ]]]
+2025-02-19 19:28:59.987 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:28:59.988 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[800.5 358.5 186.2]]]
+2025-02-19 19:29:00.086 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:00.087 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[795.5 357.5 184. ]]]
+2025-02-19 19:29:00.188 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:00.188 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[798.5 361.5 187.8]]]
+2025-02-19 19:29:00.296 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:00.296 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[799.5 362.5 188.5]]]
+2025-02-19 19:29:00.420 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:00.420 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[796.5 365.5 188.2]]]
+2025-02-19 19:29:00.523 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:00.524 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[794.5 366.5 185.4]]]
+2025-02-19 19:29:06.414 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:06.414 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[640.5 454.5 217.6]]]
+2025-02-19 19:29:06.414 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 545x545
+2025-02-19 19:29:06.414 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:29:06.414208+03:00, Description: Circle detected in frame
+2025-02-19 19:29:06.416 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:29:06.414208+03:00.jpg
+2025-02-19 19:29:06.417 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:29:06.414208+03:00.jpg
+2025-02-19 19:29:06.420 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 26
+2025-02-19 19:29:06.518 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:06.519 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[640.5 463.5 164.3]]]
+2025-02-19 19:29:06.814 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:06.815 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[641.5 443.5 214.5]]]
+2025-02-19 19:29:06.915 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:06.915 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[630.5 459.5 195.1]]]
+2025-02-19 19:29:07.030 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:07.030 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[636.5 470.5 188.9]]]
+2025-02-19 19:29:07.146 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:07.146 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[636.5 451.5 208.3]]]
+2025-02-19 19:29:08.548 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:08.548 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[641.5 428.5 206.9]]]
+2025-02-19 19:29:08.548 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 517x517
+2025-02-19 19:29:08.548 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:29:08.548184+03:00, Description: Circle detected in frame
+2025-02-19 19:29:08.550 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:29:08.548184+03:00.jpg
+2025-02-19 19:29:08.551 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:29:08.548184+03:00.jpg
+2025-02-19 19:29:08.554 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 27
+2025-02-19 19:29:08.656 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:08.656 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[625.5 451.5 179.5]]]
+2025-02-19 19:29:08.751 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:08.751 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[629.5 448.5 200.6]]]
+2025-02-19 19:29:08.852 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:08.852 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[634.5 442.5 198.7]]]
+2025-02-19 19:29:08.946 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:08.947 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[628.5 434.5 206.2]]]
+2025-02-19 19:29:09.054 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:09.054 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[590.5 440.5 198.2]]]
+2025-02-19 19:29:09.148 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:09.149 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[574.5 418.5 188.7]]]
+2025-02-19 19:29:11.050 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:11.051 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[446.5 558.5 194.7]]]
+2025-02-19 19:29:11.051 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 487x487
+2025-02-19 19:29:11.051 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:29:11.050917+03:00, Description: Circle detected in frame
+2025-02-19 19:29:11.052 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:29:11.050917+03:00.jpg
+2025-02-19 19:29:11.054 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:29:11.050917+03:00.jpg
+2025-02-19 19:29:11.056 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 28
+2025-02-19 19:29:11.188 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:11.188 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[442.5 561.5 196.8]]]
+2025-02-19 19:29:11.290 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:11.290 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[447.5 556.5 191.5]]]
+2025-02-19 19:29:11.388 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:11.388 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[452.5 550.5 197.5]]]
+2025-02-19 19:29:11.486 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:11.486 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[450.5 548.5 192.7]]]
+2025-02-19 19:29:11.587 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:11.587 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[442.5 540.5 194.5]]]
+2025-02-19 19:29:12.080 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:12.080 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[496.5 544.5 169.2]]]
+2025-02-19 19:29:12.382 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:12.382 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[495.5 540.5 153.7]]]
+2025-02-19 19:29:12.478 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:12.479 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[480.5 539.5 157.3]]]
+2025-02-19 19:29:12.580 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:12.580 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[465.5 557.5 150.4]]]
+2025-02-19 19:29:15.578 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:15.578 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[449.5 540.5 129. ]]]
+2025-02-19 19:29:15.578 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 322x322
+2025-02-19 19:29:15.579 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:29:15.578738+03:00, Description: Circle detected in frame
+2025-02-19 19:29:15.580 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:29:15.578738+03:00.jpg
+2025-02-19 19:29:15.580 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:29:15.578738+03:00.jpg
+2025-02-19 19:29:15.582 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 29
+2025-02-19 19:29:15.781 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:15.782 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[449.5 539.5 139.5]]]
+2025-02-19 19:29:15.883 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:15.883 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[449.5 542.5 129. ]]]
+2025-02-19 19:29:15.983 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:15.983 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[448.5 545.5 129.2]]]
+2025-02-19 19:29:16.085 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:16.085 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[447.5 545.5 130.5]]]
+2025-02-19 19:29:16.191 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:16.191 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[448.5 546.5 129.4]]]
+2025-02-19 19:29:16.282 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:16.282 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[454.5 542.5 131.6]]]
+2025-02-19 19:29:16.386 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:16.386 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[476.5 535.5 132.4]]]
+2025-02-19 19:29:17.180 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:17.180 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1017.5  503.5  136.2]]]
+2025-02-19 19:29:17.280 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:17.281 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1061.5  515.5  137.4]]]
+2025-02-19 19:29:17.384 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:17.384 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1098.5  524.5  137.2]]]
+2025-02-19 19:29:17.484 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:17.484 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1129.5  533.5  136.2]]]
+2025-02-19 19:29:17.585 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:17.585 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1155.5  538.5  146.4]]]
+2025-02-19 19:29:17.683 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:17.684 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1176.5  540.5  146.2]]]
+2025-02-19 19:29:17.785 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:17.785 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1196.5  544.5  148.5]]]
+2025-02-19 19:29:17.785 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 370x370
+2025-02-19 19:29:17.785 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:29:17.785350+03:00, Description: Circle detected in frame
+2025-02-19 19:29:17.786 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:29:17.785350+03:00.jpg
+2025-02-19 19:29:17.787 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:29:17.785350+03:00.jpg
+2025-02-19 19:29:17.789 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 30
+2025-02-19 19:29:17.888 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:17.888 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1214.5  542.5  147. ]]]
+2025-02-19 19:29:22.396 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:22.397 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1244.5  284.5  140.3]]]
+2025-02-19 19:29:22.397 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 350x350
+2025-02-19 19:29:22.397 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:29:22.397156+03:00, Description: Circle detected in frame
+2025-02-19 19:29:22.398 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:29:22.397156+03:00.jpg
+2025-02-19 19:29:22.399 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:29:22.397156+03:00.jpg
+2025-02-19 19:29:22.401 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 31
+2025-02-19 19:29:22.503 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:22.503 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1242.5  284.5  157.6]]]
+2025-02-19 19:29:22.600 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:22.601 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1244.5  289.5  148.6]]]
+2025-02-19 19:29:22.898 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:22.898 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1238.5  293.5  150.9]]]
+2025-02-19 19:29:23.004 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:23.005 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1236.5  286.5  145.1]]]
+2025-02-19 19:29:23.102 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:23.102 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1229.5  284.5  161.6]]]
+2025-02-19 19:29:23.204 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:23.204 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1231.5  286.5  159.1]]]
+2025-02-19 19:29:23.304 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:23.304 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1224.5  286.5  150.5]]]
+2025-02-19 19:29:23.498 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:23.498 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1219.5  286.5  151.7]]]
+2025-02-19 19:29:23.603 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:23.603 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1220.5  287.5  164.4]]]
+2025-02-19 19:29:23.703 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:23.703 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1228.5  292.5  161.9]]]
+2025-02-19 19:29:23.798 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:23.798 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1218.5  286.5  164.2]]]
+2025-02-19 19:29:23.901 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:23.901 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1222.5  288.5  159.4]]]
+2025-02-19 19:29:24.004 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:24.004 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1216.5  286.5  163. ]]]
+2025-02-19 19:29:24.109 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:24.109 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1224.5  287.5  157.3]]]
+2025-02-19 19:29:24.202 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:24.202 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1230.5  295.5  154.3]]]
+2025-02-19 19:29:24.300 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:24.300 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1226.5  287.5  159.6]]]
+2025-02-19 19:29:24.496 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:29:24.496 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1232.5  286.5  156.7]]]
+2025-02-19 19:29:24.496 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 392x392
+2025-02-19 19:29:24.496 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:29:24.496207+03:00, Description: Circle detected in frame
+2025-02-19 19:29:24.497 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:29:24.496207+03:00.jpg
+2025-02-19 19:29:24.498 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:29:24.496207+03:00.jpg
+2025-02-19 19:29:24.500 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 32
+2025-02-19 19:29:35.748 | INFO     | app.repository.movement_repository:get_movements:34 - Retrieving movements.
+2025-02-19 19:29:35.748 | INFO     | app.main:notifications_page:118 - Total movements found: 14
+2025-02-19 19:29:36.697 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x10fcd0750> attached.
+2025-02-19 19:29:55.919 | INFO     | app.repository.movement_repository:get_movements:34 - Retrieving movements.
+2025-02-19 19:29:55.919 | INFO     | app.main:notifications_page:118 - Total movements found: 14
+2025-02-19 19:30:01.447 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x13bc5a610> attached.
+2025-02-19 19:31:48.310 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x10f57d990> attached.
+2025-02-19 19:31:53.158 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:53.158 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[561.5 565.5 159.6]]]
+2025-02-19 19:31:53.266 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:53.267 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[524.5 537.5 158.5]]]
+2025-02-19 19:31:54.329 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:54.330 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[453.5 480.5 165. ]]]
+2025-02-19 19:31:54.436 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:54.436 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[462.5 473.5 170.3]]]
+2025-02-19 19:31:54.535 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:54.535 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[480.5 479.5 149.5]]]
+2025-02-19 19:31:54.632 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:54.632 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[468.5 476.5 165.2]]]
+2025-02-19 19:31:54.735 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:54.735 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[465.5 475.5 164.7]]]
+2025-02-19 19:31:54.833 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:54.834 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[475.5 467.5 150.8]]]
+2025-02-19 19:31:54.929 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:54.929 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[482.5 457.5 161.2]]]
+2025-02-19 19:31:55.511 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:55.511 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[786.5 405.5 147.5]]]
+2025-02-19 19:31:55.511 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 370x370
+2025-02-19 19:31:55.512 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:31:55.511600+03:00, Description: Circle detected in frame
+2025-02-19 19:31:55.513 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:31:55.511600+03:00.jpg
+2025-02-19 19:31:55.513 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:31:55.511600+03:00.jpg
+2025-02-19 19:31:55.517 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 33
+2025-02-19 19:31:55.612 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:55.612 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[812.5 400.5 148.2]]]
+2025-02-19 19:31:58.114 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:58.114 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[864.5 362.5  80.3]]]
+2025-02-19 19:31:58.114 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 200x200
+2025-02-19 19:31:58.114 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:31:58.114422+03:00, Description: Circle detected in frame
+2025-02-19 19:31:58.115 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:31:58.114422+03:00.jpg
+2025-02-19 19:31:58.115 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:31:58.114422+03:00.jpg
+2025-02-19 19:31:58.117 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 34
+2025-02-19 19:31:58.608 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:58.609 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[854.5 355.5  80.8]]]
+2025-02-19 19:31:58.716 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:58.716 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[856.5 355.5  80.4]]]
+2025-02-19 19:31:58.816 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:58.816 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[860.5 354.5  79.4]]]
+2025-02-19 19:31:58.912 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:31:58.912 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[862.5 352.5  83.5]]]
+2025-02-19 19:32:00.313 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:00.313 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[891.5 390.5  86.1]]]
+2025-02-19 19:32:01.913 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:01.913 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[885.5 378.5  85.2]]]
+2025-02-19 19:32:01.913 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 212x212
+2025-02-19 19:32:01.913 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:32:01.913657+03:00, Description: Circle detected in frame
+2025-02-19 19:32:01.914 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:32:01.913657+03:00.jpg
+2025-02-19 19:32:01.914 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:32:01.913657+03:00.jpg
+2025-02-19 19:32:01.916 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 35
+2025-02-19 19:32:02.520 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:02.521 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[884.5 379.5  78.4]]]
+2025-02-19 19:32:02.619 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:02.620 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[887.5 375.5  82.2]]]
+2025-02-19 19:32:02.717 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:02.717 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[884.5 378.5  79.2]]]
+2025-02-19 19:32:02.819 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:02.819 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[883.5 374.5  78. ]]]
+2025-02-19 19:32:02.914 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:02.914 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[881.5 374.5  78.7]]]
+2025-02-19 19:32:03.015 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:03.015 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[879.5 378.5  88.7]]]
+2025-02-19 19:32:03.118 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:03.118 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[879.5 375.5  78.4]]]
+2025-02-19 19:32:03.218 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:03.219 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[880.5 375.5  78.9]]]
+2025-02-19 19:32:03.316 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:03.317 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[882.5 376.5  78.9]]]
+2025-02-19 19:32:03.418 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:03.419 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[883.5 376.5  77.5]]]
+2025-02-19 19:32:03.713 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:03.713 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[957.5 401.5  80.3]]]
+2025-02-19 19:32:03.817 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:03.817 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[996.5 413.5  80.7]]]
+2025-02-19 19:32:05.025 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:05.025 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1155.5  455.5   90. ]]]
+2025-02-19 19:32:05.025 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 225x225
+2025-02-19 19:32:05.025 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:32:05.025377+03:00, Description: Circle detected in frame
+2025-02-19 19:32:05.026 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:32:05.025377+03:00.jpg
+2025-02-19 19:32:05.026 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:32:05.025377+03:00.jpg
+2025-02-19 19:32:05.028 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 36
+2025-02-19 19:32:06.123 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:06.123 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1145.5  433.5   83.1]]]
+2025-02-19 19:32:06.237 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:06.237 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1144.5  434.5   84.9]]]
+2025-02-19 19:32:06.356 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:06.357 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1141.5  431.5   83.8]]]
+2025-02-19 19:32:06.455 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:06.455 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1140.5  431.5   91.8]]]
+2025-02-19 19:32:06.554 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:06.555 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1141.5  428.5   82.5]]]
+2025-02-19 19:32:06.660 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:06.660 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1140.5  428.5   84.1]]]
+2025-02-19 19:32:06.758 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:06.758 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1138.5  423.5   84. ]]]
+2025-02-19 19:32:06.855 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:06.855 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1133.5  423.5   81.9]]]
+2025-02-19 19:32:06.954 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:06.954 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1135.5  423.5   82.9]]]
+2025-02-19 19:32:07.054 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:07.055 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1136.5  423.5   83.5]]]
+2025-02-19 19:32:07.150 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:07.151 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1136.5  424.5   83.6]]]
+2025-02-19 19:32:07.253 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:07.254 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1133.5  424.5   81.7]]]
+2025-02-19 19:32:07.354 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:07.355 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1138.5  424.5   84.4]]]
+2025-02-19 19:32:07.455 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:07.455 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1142.5  430.5   83.4]]]
+2025-02-19 19:32:07.553 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:07.553 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1148.5  434.5   91.1]]]
+2025-02-19 19:32:07.652 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:07.652 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1153.5  428.5   89.3]]]
+2025-02-19 19:32:08.961 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:08.962 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1088.5  271.5  135.2]]]
+2025-02-19 19:32:08.962 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 337x337
+2025-02-19 19:32:08.962 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:32:08.961880+03:00, Description: Circle detected in frame
+2025-02-19 19:32:08.963 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:32:08.961880+03:00.jpg
+2025-02-19 19:32:08.963 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:32:08.961880+03:00.jpg
+2025-02-19 19:32:08.965 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 37
+2025-02-19 19:32:09.067 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:09.068 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1082.5  274.5  137.6]]]
+2025-02-19 19:32:09.165 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:09.165 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1075.5  278.5  133.4]]]
+2025-02-19 19:32:09.266 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:09.266 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1055.5  277.5  136.7]]]
+2025-02-19 19:32:09.362 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:09.362 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1034.5  266.5  136.6]]]
+2025-02-19 19:32:09.462 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:09.462 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1018.5  261.5  138. ]]]
+2025-02-19 19:32:09.565 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:09.566 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1011.5  256.5  136.4]]]
+2025-02-19 19:32:09.664 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:09.664 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1009.5  255.5  145.4]]]
+2025-02-19 19:32:09.760 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:09.760 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1010.5  257.5  144.8]]]
+2025-02-19 19:32:09.865 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:09.865 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1008.5  257.5  133.3]]]
+2025-02-19 19:32:09.964 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:09.964 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[995.5 249.5 130.4]]]
+2025-02-19 19:32:10.062 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:10.062 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1005.5  250.5  137.9]]]
+2025-02-19 19:32:10.161 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:10.162 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1007.5  259.5  146.1]]]
+2025-02-19 19:32:10.269 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:10.270 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[1007.5  259.5  148.2]]]
+2025-02-19 19:32:10.366 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:10.366 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[992.5 252.5 134.1]]]
+2025-02-19 19:32:10.462 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:10.462 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[996.5 258.5 146.8]]]
+2025-02-19 19:32:10.577 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:10.577 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[992.5 256.5 147.5]]]
+2025-02-19 19:32:10.697 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:10.697 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[966.5 250.5 135.5]]]
+2025-02-19 19:32:10.794 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:10.794 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[944.5 252.5 144.6]]]
+2025-02-19 19:32:11.273 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:11.273 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[627.5 525.5 131.7]]]
+2025-02-19 19:32:11.273 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 330x330
+2025-02-19 19:32:11.274 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:32:11.273644+03:00, Description: Circle detected in frame
+2025-02-19 19:32:11.274 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:32:11.273644+03:00.jpg
+2025-02-19 19:32:11.275 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:32:11.273644+03:00.jpg
+2025-02-19 19:32:11.277 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 38
+2025-02-19 19:32:11.379 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:11.379 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[591.5 556.5 119.2]]]
+2025-02-19 19:32:11.478 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:11.478 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[570.5 571.5 111.5]]]
+2025-02-19 19:32:11.678 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:11.678 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[566.5 589.5  94.4]]]
+2025-02-19 19:32:11.879 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:11.880 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[595.5 605.5 101.5]]]
+2025-02-19 19:32:11.983 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:11.983 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[599.5 615.5 100.8]]]
+2025-02-19 19:32:12.081 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:12.081 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[602.5 604.5 103.7]]]
+2025-02-19 19:32:12.178 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:12.178 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[599.5 607.5 103.5]]]
+2025-02-19 19:32:12.475 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:12.476 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[602.5 613.5 111.6]]]
+2025-02-19 19:32:12.775 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:12.775 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[588.5 604.5  89. ]]]
+2025-02-19 19:32:12.883 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:12.883 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[599.5 613.5 100.5]]]
+2025-02-19 19:32:15.952 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:15.952 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[763.5 385.5  88.3]]]
+2025-02-19 19:32:15.952 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 220x220
+2025-02-19 19:32:15.953 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:32:15.952824+03:00, Description: Circle detected in frame
+2025-02-19 19:32:15.953 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:32:15.952824+03:00.jpg
+2025-02-19 19:32:15.954 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:32:15.952824+03:00.jpg
+2025-02-19 19:32:15.955 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 39
+2025-02-19 19:32:16.061 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:16.061 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[761.5 384.5  87.7]]]
+2025-02-19 19:32:16.157 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:16.157 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[760.5 382.5  88. ]]]
+2025-02-19 19:32:16.258 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:16.258 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[758.5 380.5  87.3]]]
+2025-02-19 19:32:16.358 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:16.358 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[758.5 381.5  80.2]]]
+2025-02-19 19:32:16.457 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:16.458 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[756.5 376.5  84. ]]]
+2025-02-19 19:32:16.559 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:16.559 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[754.5 382.5  84.9]]]
+2025-02-19 19:32:16.659 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:16.659 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[754.5 375.5  81.1]]]
+2025-02-19 19:32:16.757 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:16.757 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[750.5 371.5  83.5]]]
+2025-02-19 19:32:16.859 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:16.859 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[754.5 365.5  87.9]]]
+2025-02-19 19:32:18.761 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:18.762 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[966.5 366.5  80.6]]]
+2025-02-19 19:32:18.762 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 202x202
+2025-02-19 19:32:18.762 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:32:18.761957+03:00, Description: Circle detected in frame
+2025-02-19 19:32:18.762 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:32:18.761957+03:00.jpg
+2025-02-19 19:32:18.763 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:32:18.761957+03:00.jpg
+2025-02-19 19:32:18.764 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 40
+2025-02-19 19:32:18.870 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:18.870 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[950.5 348.5  80.2]]]
+2025-02-19 19:32:18.964 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:18.964 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[934.5 341.5  81.5]]]
+2025-02-19 19:32:19.063 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:19.063 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[924.5 342.5  89.3]]]
+2025-02-19 19:32:19.164 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:19.164 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[917.5 342.5  79.9]]]
+2025-02-19 19:32:19.263 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:19.264 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[909.5 334.5  80.9]]]
+2025-02-19 19:32:19.362 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:19.363 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[892.5 326.5  81. ]]]
+2025-02-19 19:32:19.464 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:19.464 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[873.5 318.5  80.1]]]
+2025-02-19 19:32:19.561 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:19.561 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[857.5 308.5  80.5]]]
+2025-02-19 19:32:19.661 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:19.661 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[837.5 298.5  82.3]]]
+2025-02-19 19:32:20.058 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:20.058 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[727.5 311.5 107.6]]]
+2025-02-19 19:32:20.151 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:20.151 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[704.5 361.5 120.9]]]
+2025-02-19 19:32:20.251 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:20.251 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[692.5 432.5 144.7]]]
+2025-02-19 19:32:20.352 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:20.353 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[663.5 505.5 171.1]]]
+2025-02-19 19:32:20.455 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:20.455 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[636.5 552.5 183.5]]]
+2025-02-19 19:32:20.552 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:20.552 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[586.5 560.5 186.3]]]
+2025-02-19 19:32:20.659 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:20.659 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[563.5 574.5 192.7]]]
+2025-02-19 19:32:20.758 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:20.758 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[545.5 582.5 216.6]]]
+2025-02-19 19:32:20.855 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:20.855 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[532.5 587.5 219.4]]]
+2025-02-19 19:32:20.855 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 547x547
+2025-02-19 19:32:20.856 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-19 17:32:20.855656+03:00, Description: Circle detected in frame
+2025-02-19 19:32:20.859 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-19T17:32:20.855656+03:00.jpg
+2025-02-19 19:32:20.860 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-19T17:32:20.855656+03:00.jpg
+2025-02-19 19:32:20.864 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 41
+2025-02-19 19:32:20.960 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:20.960 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[527.5 591.5 216.1]]]
+2025-02-19 19:32:21.059 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:21.059 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[530.5 589.5 217.2]]]
+2025-02-19 19:32:21.160 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:21.160 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[531.5 596.5 194.9]]]
+2025-02-19 19:32:21.256 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:21.256 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[534.5 596.5 215.5]]]
+2025-02-19 19:32:21.358 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:21.358 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[537.5 602.5 215.2]]]
+2025-02-19 19:32:21.460 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:21.460 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[540.5 609.5 216.6]]]
+2025-02-19 19:32:21.563 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:21.564 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[539.5 615.5 215.3]]]
+2025-02-19 19:32:21.656 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:21.656 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[537.5 622.5 213.2]]]
+2025-02-19 19:32:21.760 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:21.760 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[532.5 621.5 198.1]]]
+2025-02-19 19:32:21.859 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:21.860 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[527.5 626.5 193.4]]]
+2025-02-19 19:32:21.959 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:21.960 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[522.5 624.5 193.4]]]
+2025-02-19 19:32:22.057 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:22.058 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[528.5 627.5 193.5]]]
+2025-02-19 19:32:22.158 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:22.158 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[530.5 628.5 194.2]]]
+2025-02-19 19:32:22.261 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:22.262 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[531.5 629.5 193.8]]]
+2025-02-19 19:32:22.360 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:22.361 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[539.5 633.5 189.1]]]
+2025-02-19 19:32:22.462 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:22.462 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[550.5 638.5 197.7]]]
+2025-02-19 19:32:22.561 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-19 19:32:22.562 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[552.5 652.5 187.6]]]
+2025-02-22 14:21:03.907 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x1115ed0d0> attached.
+2025-02-22 14:21:47.247 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x111646990> attached.
+2025-02-22 14:22:08.210 | INFO     | app.observer.observer:attach:15 - Observer <app.observer.notifier.ConsoleNotifier object at 0x121c7d590> attached.
+2025-02-22 14:22:27.580 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:27.581 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[597.5 752.5 145.4]]]
+2025-02-22 14:22:27.718 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:27.718 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[630.5 641.5 143.9]]]
+2025-02-22 14:22:27.849 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:27.849 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[644.5 575.5 146.9]]]
+2025-02-22 14:22:27.975 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:27.975 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[619.5 570.5 155.2]]]
+2025-02-22 14:22:28.110 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:28.110 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[584.5 584.5 171.5]]]
+2025-02-22 14:22:28.247 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:28.247 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[540.5 598.5 179.3]]]
+2025-02-22 14:22:28.382 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:28.382 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[511.5 592.5 192.4]]]
+2025-02-22 14:22:28.516 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:28.516 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[520.5 574.5 186.4]]]
+2025-02-22 14:22:28.651 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:28.651 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[549.5 557.5 191.2]]]
+2025-02-22 14:22:28.779 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:28.779 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[576.5 553.5 174.3]]]
+2025-02-22 14:22:28.910 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:28.911 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[632.5 531.5 173. ]]]
+2025-02-22 14:22:29.046 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:29.047 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[666.5 525.5 185.1]]]
+2025-02-22 14:22:29.179 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:29.180 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[684.5 523.5 185.9]]]
+2025-02-22 14:22:29.313 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:29.313 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[700.5 517.5 182. ]]]
+2025-02-22 14:22:29.445 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:29.446 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[694.5 519.5 167.3]]]
+2025-02-22 14:22:29.576 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:29.576 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[668.5 529.5 188.1]]]
+2025-02-22 14:22:29.576 | INFO     | app.detectors.circle_detector:process_frame:101 - Object is focused. The frame size to save: 470x470
+2025-02-22 14:22:29.578 | INFO     | app.repository.movement_repository:add_movement:31 - Movement added: 2025-02-22 12:22:29.576221+03:00, Description: Circle detected in frame
+2025-02-22 14:22:29.579 | INFO     | app.repository.movement_repository:save_frame:54 - Saved color frame: saved_frames/frame_2025-02-22T12:22:29.576221+03:00.jpg
+2025-02-22 14:22:29.580 | INFO     | app.repository.movement_repository:save_frame:61 - Saved gray frame: saved_frames/frame_gray_2025-02-22T12:22:29.576221+03:00.jpg
+2025-02-22 14:22:29.604 | INFO     | app.repository.movement_repository:save_image_to_db:72 - Image saved to database with ID: 42
+2025-02-22 14:22:29.742 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:29.742 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[639.5 533.5 191.7]]]
+2025-02-22 14:22:29.876 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:29.876 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[621.5 537.5 192.4]]]
+2025-02-22 14:22:30.015 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:30.015 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[610.5 546.5 177.9]]]
+2025-02-22 14:22:30.146 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:30.146 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[615.5 542.5 170.9]]]
+2025-02-22 14:22:30.278 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:30.278 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[629.5 541.5 190.4]]]
+2025-02-22 14:22:30.412 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:30.412 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[632.5 552.5 189.7]]]
+2025-02-22 14:22:30.549 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:30.549 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[637.5 547.5 188.8]]]
+2025-02-22 14:22:30.684 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:30.684 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[642.5 534.5 188.6]]]
+2025-02-22 14:22:30.812 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:30.812 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[644.5 534.5 188.6]]]
+2025-02-22 14:22:30.945 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:30.945 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[642.5 530.5 182.5]]]
+2025-02-22 14:22:31.085 | INFO     | app.observer.observer:notify:22 - Notifying observers with message: Circle detected in frame
+2025-02-22 14:22:31.085 | INFO     | app.detectors.circle_detector:process_frame:84 - Circles detected: [[[616.5 545.5 175.7]]]

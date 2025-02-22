@@ -1,8 +1,14 @@
-#app/main.py
-
-from fastapi import FastAPI, Response
-from factory.video_factory import VideoStreamHandlerFactory
-from starlette.responses import StreamingResponse  # Импортируем StreamingResponse
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse, HTMLResponse, StreamingResponse
+from starlette.responses import StreamingResponse
+from app.factory.video_factory import VideoStreamHandlerFactory
+from app.detectors.circle_detector import CircleDetector, CircleDetectorConfig
+from app.observer.notifier import ConsoleNotifier
+from app.repository.movement_repository import InMemoryMovementRepository
+from app.utils.decorators import LoggingDetectorDecorator, FilterDetectorDecorator
+from loguru import logger
+from fastapi.templating import Jinja2Templates
+from collections import deque
 import cv2
 import asyncio
 
@@ -56,17 +62,40 @@ async def scanner_page(request: Request):
 @app.get("/video_feed")
 async def video_feed(stream_type: str = "Webcam", url: str = None):
     # Создание обработчика видеопотока через фабрику
-    handler = VideoStreamHandlerFactory.create_handler(stream_type=stream_type, url=url)
-    video = handler.get_stream()
-    def frame_generator():
-        try:
-            while True:
-                frame = video.get_frame()
-                if frame is None:
-                    break
-                # Обработка кадра детектором движения с декораторами
-                #processed_frame = detector.process_frame(frame)
-                ret, buffer = cv2.imencode('.jpg', frame)
+    try:
+        handler = VideoStreamHandlerFactory.create_handler(
+            stream_type=stream_type, url=url
+        )
+    except ValueError as ve:
+        raise HTTPException(status_code=400, detail=str(ve))
+    
+    try:
+        video = handler.get_stream()
+    except ValueError as ve:
+        raise HTTPException(status_code=400, detail=str(ve))
+
+    # Инициализация детектора движения с глобальным репозиторием
+    detector = CircleDetector(repository=global_repository, config=circle_config)
+
+    # Применение декораторов
+    # detector = LoggingDetectorDecorator(detector)
+    # detector = FilterDetectorDecorator(detector, keyword="Motion")
+    
+    # Инициализация наблюдателей
+    console_notifier = ConsoleNotifier()
+    detector.attach(console_notifier)
+
+    async def frame_generator():
+        while True:
+            frame = video.get_frame()
+            if frame is None:
+                break
+            try:
+                # Отображение кадра зеркально
+                flipped_frame = cv2.flip(frame, 1)
+                # Обработка кадра детектором
+                processed_frame = await asyncio.to_thread(detector.process_frame, flipped_frame)
+                ret, buffer = cv2.imencode('.jpg', processed_frame)
                 if not ret:
                     continue
                 frame_bytes = buffer.tobytes()
