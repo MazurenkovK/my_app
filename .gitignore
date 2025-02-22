@@ -1,5 +1,4 @@
-*.log
-.DS_Store
+.DS_Store/
 .vscode/
 my_file/
 saved_frames/
