@@ -1,7 +1,8 @@
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Request, Query, UploadFile, File
 from fastapi.responses import JSONResponse, HTMLResponse, StreamingResponse
 from starlette.responses import StreamingResponse
 from app.factory.video_factory import VideoStreamHandlerFactory
+from app.factory.video_factory import MediaSource
 from app.detectors.circle_detector import CircleDetector, CircleDetectorConfig
 from app.observer.notifier import ConsoleNotifier
 from app.repository.movement_repository import InMemoryMovementRepository
@@ -11,6 +12,8 @@ from fastapi.templating import Jinja2Templates
 from collections import deque
 import cv2
 import asyncio
+import os
+import tempfile
 
 app = FastAPI()
 global_repository = InMemoryMovementRepository()
@@ -110,6 +113,105 @@ async def video_feed(stream_type: str = "Webcam", url: str = None):
     return StreamingResponse(
         frame_generator(), media_type="multipart/x-mixed-replace; boundary=frame")
 
+@app.post("/video_feed/file")
+async def video_feed_file(video_file: UploadFile = File(...)):
+    # Создание временного файла для сохранения видео
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".mp4") as temp_file:
+        contents = await video_file.read()
+        temp_file.write(contents)
+        temp_file_path = temp_file.name
+
+    # Ваша логика обработки видео файла
+    print(f"Received file '{video_file.filename}' of size {len(contents)} bytes.")
+
+    # Обработка видео файла
+    try:
+        # Инициализация детектора круга
+        detector = CircleDetector(repository=global_repository, config=circle_config)
+
+        # Открытие видео файла
+        video = cv2.VideoCapture(temp_file_path)
+
+        async def frame_generator():
+            while True:
+                ret, frame = video.read()
+                if not ret:
+                    break
+
+                # Обработка кадра детектором
+                processed_frame = await asyncio.to_thread(detector.process_frame, frame)
+
+                # Кодирование кадра в JPEG
+                ret, buffer = cv2.imencode('.jpg', processed_frame)
+                if not ret:
+                    continue
+                frame_bytes = buffer.tobytes()
+                yield (b'--frame\r\n'
+                       b'Content-Type: image/jpeg\r\n\r\n' 
+                       + frame_bytes + b'\r\n')
+                video.release
+        return StreamingResponse(frame_generator(), media_type="multipart/x-mixed-replace; boundary=frame")
+    except Exception as e:
+        logger.error(f"Error processing video file: {e}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
+    finally:
+        # Удаление временного файла после обработки
+        os.remove(temp_file_path)        
+    
+        # return {"filename": video_file.filename}
+
+"""
+@app.get("/video_feed")
+async def video_feed(stream_type: str = "Webcam", url: str = None):
+    # Создание обработчика видеопотока через фабрику
+    try:
+        handler = VideoStreamHandlerFactory.create_handler(
+            stream_type=stream_type, url=url
+        )
+    except ValueError as ve:
+        raise HTTPException(status_code=400, detail=str(ve))
+    
+    try:
+        video = handler.get_stream()
+    except ValueError as ve:
+        raise HTTPException(status_code=400, detail=str(ve))
+
+    # Инициализация детектора движения с глобальным репозиторием
+    detector = CircleDetector(repository=global_repository, config=circle_config)
+
+    # Применение декораторов
+    # detector = LoggingDetectorDecorator(detector)
+    # detector = FilterDetectorDecorator(detector, keyword="Motion")
+    
+    # Инициализация наблюдателей
+    console_notifier = ConsoleNotifier()
+    detector.attach(console_notifier)
+
+    async def frame_generator():
+        while True:
+            frame = video.get_frame()
+            if frame is None:
+                break
+            try:
+                # Отображение кадра зеркально
+                flipped_frame = cv2.flip(frame, 1)
+                # Обработка кадра детектором
+                processed_frame = await asyncio.to_thread(detector.process_frame, flipped_frame)
+                ret, buffer = cv2.imencode('.jpg', processed_frame)
+                if not ret:
+                    continue
+                frame_bytes = buffer.tobytes()
+                yield (b'--frame\r\n'
+                       b'Content-Type: image/jpeg\r\n\r\n' 
+                       + frame_bytes + b'\r\n')
+            except Exception as e:
+                logger.error(f"Error during video processing: {e}")
+                raise HTTPException(status_code=500, detail="Internal Server Error")
+            finally:
+                video.release
+    return StreamingResponse(
+        frame_generator(), media_type="multipart/x-mixed-replace; boundary=frame")
+"""
 
 @app.get("/notifications_page", response_class=HTMLResponse)
 async def notifications_page(request: Request):
@@ -153,6 +255,7 @@ async def log_stream(request: Request):
         event_generator(),
         media_type="text/event-stream"
     )     
+
 """
 - VideoStream класс отвечает за подключение к видеопотоку.
 - Маршрут /video_feed возвращает поток изображений, закодированных

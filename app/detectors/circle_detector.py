@@ -12,23 +12,24 @@ import time
 moscow_tz = pytz.timezone('Europe/Moscow')
 
 # Функция/свертка для повышения четкости кадра
+"""
 def sharpen_image(image):
        kernel = np.array([[0, -1, 0],
                           [-1, 5, -1],
                           [0, -1, 0]])
        sharpened = cv2.filter2D(image, -1, kernel)
        return sharpened
-
+"""
 # Создаем Pydantic модель для валидации конфигурации
 class CircleDetectorConfig(BaseModel):
     """Конфигурация детектора кругов с валидацией"""
-    dp: PositiveFloat = 0.5
-    min_dist: PositiveInt = 200
-    param1: PositiveInt = 100
-    param2: PositiveInt = 150
-    min_radius: PositiveInt = 70
-    max_radius: PositiveInt = 10000
-    min_delay: NonNegativeFloat = 0
+    dp: PositiveFloat = 4
+    min_dist: PositiveInt = 20000
+    param1: PositiveInt = 400
+    param2: PositiveInt = 400
+    min_radius: PositiveInt = 100
+    max_radius: PositiveInt = 200
+    min_delay: NonNegativeFloat = 0.5
     save_delay: NonNegativeFloat = 2    
     
 class CircleDetector(Subject):
@@ -93,15 +94,24 @@ class CircleDetector(Subject):
                     # Обрезаем изображение
                     crop_size = int(2.5 * radius)
                     x_start = max(0, x - crop_size // 2)
+                    if x_start < 0:
+                        x_start = 0
                     y_start = max(0, y - crop_size // 2)
+                    if y_start < 0:
+                        y_start = 0
                     x_end = min(frame.shape[1], x + crop_size // 2)
+                    if x_end > frame.shape[1]:
+                        x_end = frame.shape[1]
                     y_end = min(frame.shape[0], y + crop_size // 2)
+                    if y_end > frame.shape[1]:
+                        y_end = frame.shape[1]
 
                     cropped_frame = frame[y_start:y_end, x_start:x_end]
                     logger.info(f"Object is focused. The frame size to save: {crop_size}x{crop_size}")
 
                     # Сохраняем данные о движении
-                    movement.frame = sharpen_image(cropped_frame.copy())
+                    # movement.frame = sharpen_image(cropped_frame.copy())
+                    movement.frame = cropped_frame.copy()
                     self.repository.add_movement(movement)
                     self.repository.save_frame(movement)
                     self.repository.save_image_to_db(movement)
